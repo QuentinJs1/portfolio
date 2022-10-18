@@ -9,10 +9,10 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
  * Base
  */
 // Debug
-const debugObject = {}
-const gui = new dat.GUI({
-    width: 400
-})
+// const debugObject = {}
+// const gui = new dat.GUI({
+//     width: 400
+// })
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -58,6 +58,7 @@ gltfLoader.load(
         })
 
         scene.add(gltf.scene)
+
     }
 )
 
@@ -66,7 +67,8 @@ gltfLoader.load(
  */
 const sizes = {
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
+    padding: 80
 }
 
 window.addEventListener('resize', () => {
@@ -79,7 +81,7 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix()
 
     // Update renderer
-    renderer.setSize(sizes.width, sizes.height)
+    renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
@@ -95,27 +97,27 @@ scene.add(camera)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
+controls.minPolarAngle = 0
+controls.maxPolarAngle = Math.PI / 2
+controls.minAzimuthAngle = 0
+controls.maxAzimuthAngle = Math.PI / 3
+controls.minDistance = 8
+controls.maxDistance = 20
 controls.enableDamping = true
+controls.dampingFactor = 0.05
 
 /**
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    antialias: true
+    antialias: true,
+    alpha: true
 })
-renderer.setSize(sizes.width, sizes.height)
+renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.outputEncoding = THREE.sRGBEncoding
-
-// Background color
-debugObject.backgroundColor = '#4a4e69'
-renderer.setClearColor(debugObject.backgroundColor)
-gui
-    .addColor(debugObject, 'backgroundColor')
-    .onChange(() => {
-        renderer.setClearColor(debugObject.backgroundColor)
-    })
+    // renderer.setClearColor('#B5C0F6');
 
 
 /**
