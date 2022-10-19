@@ -5,7 +5,6 @@
 
 html,
 body {
-    overflow: hidden;
     height: 100%;
     width: 100%;
     background: white;
@@ -18,7 +17,7 @@ body {
     position: fixed;
     outline: none;
     border-radius: 20px;
-    background: linear-gradient(120deg, #E4E4FC, #B4B4F6);
+    background: linear-gradient(135deg, #E4E4FC, #B4B4F6);
 }
 
 button {
@@ -87,6 +86,7 @@ button {
 @keyframes bounce-in {
     0% {
         font-size: 13px;
+        padding-left: 20px;
     }
     100% {
         transform: scale(1.1);
@@ -99,7 +99,7 @@ button {
     0% {
         transform: scale(1.1);
         font-size: 13px;
-        padding-left: 14px;
+        padding-left: 16px;
     }
     100% {
         font-size: 14px;
