@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,11 +11,18 @@
 </head>
 
 <body>
+    <script>
+        function setDivAsActive(id) {
+            var div = document.querySelector(`.button#${id}`);
+            div.classList.remove('activated');
+            div.classList.add('activated');
+        }
+    </script>
+
     <canvas class="webgl"></canvas>
 
+    <button class="button ripple" id="launch" onmouseover="setDivAsActive(id)">Entrer dans le portfolio</button>
     <section class="demo">
-        <button class="button-launch">Entrer dans le portfolio</button>
-        <!-- <button class="button-launch">aller à l'essentiel</button> -->
     </section>
 
 </body>

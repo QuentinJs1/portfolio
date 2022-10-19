@@ -26,7 +26,7 @@ button {
     border: none;
 }
 
-.button-launch {
+.button {
     position: absolute;
     top: calc(80% - 20px);
     left: calc(50% - 100px);
@@ -35,12 +35,73 @@ button {
     background: #7D34FF;
     color: #ffffff;
     padding: 12px;
-    text-align: center;
-    font-weight: 100;
     font-size: 14px;
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.button-launch:hover {}
+.button.activated {
+    animation: bounce-out .3s forwards;
+    animation-timing-function: ease-out;
+}
+
+.button:before {
+    content: url(/static/images/next.svg);
+    width: 14px;
+    position: absolute;
+    top: 14px;
+    left: 83%;
+    opacity: 0;
+    transition: all 250ms ease;
+}
+
+.button:hover:before {
+    left: 84%;
+    opacity: 1;
+}
+
+.button:hover {
+    animation: bounce-in .3s forwards;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #7D34FF radial-gradient(circle, transparent 1%, #7D34FF 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #975BFF;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+@keyframes bounce-in {
+    0% {
+        font-size: 13px;
+    }
+    100% {
+        transform: scale(1.1);
+        font-size: 13px;
+        padding-left: 16px;
+    }
+}
+
+@keyframes bounce-out {
+    0% {
+        transform: scale(1.1);
+        font-size: 13px;
+        padding-left: 14px;
+    }
+    100% {
+        font-size: 14px;
+    }
+}
