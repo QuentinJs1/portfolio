@@ -70,8 +70,7 @@ button {
 }
 
 .button.activated {
-    animation: bounce-in .3s forwards;
-    animation-direction: reverse;
+    animation: bounce-out .3s forwards;
     animation-timing-function: ease-out;
 }
 
@@ -120,6 +119,17 @@ button {
         transform: scale(1.1);
         font-size: 13px;
         padding-left: 16px;
+    }
+}
+
+@keyframes bounce-out {
+    0% {
+        transform: scale(1.1);
+        font-size: 13px;
+        padding-left: 16px;
+    }
+    100% {
+        font-size: 14px;
     }
 }
 
