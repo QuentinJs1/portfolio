@@ -68,7 +68,8 @@ gltfLoader.load(
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight,
-    padding: 80
+    padding: 80,
+    heightMultiplier: 1.5
 }
 
 window.addEventListener('resize', () => {
@@ -81,7 +82,7 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix()
 
     // Update renderer
-    renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding)
+    renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding * sizes.heightMultiplier)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
@@ -114,7 +115,7 @@ const renderer = new THREE.WebGLRenderer({
     antialias: true,
     alpha: true
 })
-renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding)
+renderer.setSize(sizes.width - sizes.padding, sizes.height - sizes.padding * sizes.heightMultiplier)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.outputEncoding = THREE.sRGBEncoding
     // renderer.setClearColor('#B5C0F6');

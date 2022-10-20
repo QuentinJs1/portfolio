@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/favicon.png">
     <link rel="stylesheet" href="https://use.typekit.net/mmb5ymc.css">
-    <title>Quentin.js</title>
+    <title>quentin.js</title>
 </head>
 
 <body>
@@ -18,8 +19,15 @@
             div.classList.add('activated');
         }
     </script>
-    <nav>
-        <p>quentin.js</p>
+    <nav class="nav-bar">
+        <a class="logo" href="../">
+            <img src="/static/images/logo.png" alt="Logo de quentin.js" id="logo-body">
+            <p class="logo-text">quentin.js</p>
+            <div class="eyes">
+                <div class="eye" id="eye-left"></div>
+                <div class="eye" id="eye-right"></div>
+            </div>
+        </a>
     </nav>
 
     <canvas class="webgl"></canvas>

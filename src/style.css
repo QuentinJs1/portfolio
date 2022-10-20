@@ -1,3 +1,12 @@
+/* 
+    General
+*/
+
+:root {
+    --main-blue: #4945FF;
+    --dark-blue: #212067;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +22,30 @@ body {
     justify-content: center;
 }
 
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+
+/* 
+    Webgl
+*/
+
 .webgl {
     position: fixed;
     outline: none;
     border-radius: 20px;
     background: linear-gradient(135deg, #E4E4FC, #B4B4F6);
+    top: 80px;
 }
+
+
+/* 
+    Button
+*/
 
 button {
     outline: none;
@@ -43,7 +70,8 @@ button {
 }
 
 .button.activated {
-    animation: bounce-out .3s forwards;
+    animation: bounce-in .3s forwards;
+    animation-direction: reverse;
     animation-timing-function: ease-out;
 }
 
@@ -95,13 +123,91 @@ button {
     }
 }
 
-@keyframes bounce-out {
+
+/* 
+    Nav-bar
+*/
+
+.nav-bar {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-body {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.logo-text {
+    color: var(--dark-blue);
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.logo:hover #eye-left {
+    background-color: #4945FF;
+    animation: close-eye-left .1s forwards;
+    animation-timing-function: ease-in;
+}
+
+.logo:hover #eye-right {
+    background-color: #4945FF;
+    animation: close-eye-right .1s forwards;
+    animation-timing-function: ease-in;
+}
+
+.eye {
+    position: absolute;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    width: 4px;
+    height: 8px;
+}
+
+#eye-left {
+    top: 15px;
+    left: 5px;
+}
+
+#eye-right {
+    top: 16px;
+    left: 12px;
+}
+
+@keyframes close-eye-left {
     0% {
-        transform: scale(1.1);
-        font-size: 13px;
-        padding-left: 16px;
+        height: 8px;
     }
     100% {
-        font-size: 14px;
+        top: 16px;
+        height: 5px;
+        width: 12px;
+        left: 1px;
+        transform: rotate(6deg);
+        background-color: rgba(0, 0, 0, 0);
+        content: url(/static/images/cute-eye.svg);
+    }
+}
+
+@keyframes close-eye-right {
+    0% {
+        height: 8px;
+    }
+    100% {
+        top: 17px;
+        height: 5px;
+        width: 12px;
+        left: 8px;
+        transform: rotate(10deg);
+        background-color: rgba(0, 0, 0, 0);
+        content: url(/static/images/cute-eye.svg);
     }
 }
