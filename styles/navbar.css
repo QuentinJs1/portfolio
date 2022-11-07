@@ -1,0 +1,82 @@
+@import './globals.css';
+
+/**
+Logo
+*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-body {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.logo-text {
+    color: var(--dark-blue);
+}
+
+.logo:hover #eye-left {
+    background-color: var(--main-blue);
+    ;
+    animation: close-eye-left .1s forwards;
+    animation-timing-function: ease-in;
+}
+
+.logo:hover #eye-right {
+    background-color: var(--main-blue);
+    ;
+    animation: close-eye-right .1s forwards;
+    animation-timing-function: ease-in;
+}
+
+.eye {
+    position: absolute;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    width: 4px;
+    height: 8px;
+}
+
+#eye-left {
+    top: 35px;
+    left: 117px;
+}
+
+#eye-right {
+    top: 36px;
+    left: 125px;
+}
+
+@keyframes close-eye-left {
+    0% {
+        height: 8px;
+    }
+    100% {
+        top: 36px;
+        height: 5px;
+        width: 12px;
+        left: 113px;
+        transform: rotate(6deg);
+        background-color: rgba(0, 0, 0, 0);
+        content: url(../public/svg/cute-eye.svg);
+    }
+}
+
+@keyframes close-eye-right {
+    0% {
+        height: 8px;
+    }
+    100% {
+        top: 37px;
+        height: 5px;
+        width: 12px;
+        left: 121px;
+        transform: rotate(10deg);
+        background-color: rgba(0, 0, 0, 0);
+        content: url(../public/svg/cute-eye.svg);
+    }
+}

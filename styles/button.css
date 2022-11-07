@@ -1,0 +1,81 @@
+@import './globals.css';
+button {
+    outline: none;
+    border: none;
+}
+
+.button {
+    border-radius: 12px;
+    background: var(--main-blue);
+    color: #ffffff;
+    padding: 12px;
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.button.activated {
+    animation: bounce-out .3s forwards;
+    animation-timing-function: ease-out;
+}
+
+.button:before {
+    content: url(../public/svg/right-arrow.svg);
+    width: 14px;
+    position: absolute;
+    top: 14px;
+    left: 83%;
+    opacity: 0;
+    transition: all 250ms ease-out;
+}
+
+.button:hover:before {
+    left: 84%;
+    opacity: 1;
+}
+
+.button:hover {
+    animation: bounce-in .3s forwards;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: var(--main-blue) radial-gradient(circle, transparent 1%, var(--main-blue) 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #975BFF;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+@keyframes bounce-in {
+    0% {
+        font-size: 13px;
+        padding-left: 20px;
+    }
+    100% {
+        transform: scale(1.1);
+        font-size: 13px;
+        padding-left: 16px;
+    }
+}
+
+@keyframes bounce-out {
+    0% {
+        transform: scale(1.1);
+        font-size: 13px;
+        padding-left: 16px;
+    }
+    100% {
+        font-size: 14px;
+    }
+}

@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+import Navbar from '@components/Navbar';
+import '@styles/globals.css';
 
 
 export default function RootLayout({
@@ -9,7 +10,10 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+      <body className='flex flex-col justify-start'>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
