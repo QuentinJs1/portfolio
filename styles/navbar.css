@@ -33,6 +33,7 @@ Logo
     animation-timing-function: ease-in;
 }
 
+/* 
 .eye {
     position: absolute;
     background-color: var(--main-blue);
@@ -43,18 +44,19 @@ Logo
 
 #eye-left {
     top: 35px;
-    left: 117px;
+    left: 180px;
 }
 
 #eye-right {
     top: 36px;
     left: 125px;
-}
-
+} */
+/* 
 @keyframes close-eye-left {
     0% {
         height: 8px;
     }
+
     100% {
         top: 36px;
         height: 5px;
@@ -70,6 +72,7 @@ Logo
     0% {
         height: 8px;
     }
+
     100% {
         top: 37px;
         height: 5px;
@@ -79,4 +82,4 @@ Logo
         background-color: rgba(0, 0, 0, 0);
         content: url(../public/svg/cute-eye.svg);
     }
-}
+} */

@@ -7,9 +7,9 @@ import '@styles/navbar.css'
 
 export default function Navbar() {
     return (
-        <nav className="bg-white h-20 max-h-20">
-            <div className="w-screen h-2 bg-purple-100"></div>
-            <div className="py-3 px-28 flex flex-row justify-between">
+        <nav className="bg-white h-20 max-h-20 flex flex-col items-center">
+            <div className="w-screen h-1.5 bg-purple-100"></div>
+            <div className="py-3 w-3/5 flex flex-row justify-between">
                 <Link className="logo" href="../">
                     <Image src={logo} alt="Logo de quentin.js" id="logo-body" />
                     <div className="flex items-center">
@@ -21,10 +21,10 @@ export default function Navbar() {
                     </div>
                 </Link>
                 <div className="flex flex-row text-sm items-center space-x-16 h-10">
-                        <MdRssFeed className="cursor-pointer" />
-                        <MdDarkMode className="cursor-pointer" />
-                        <Link href="/blog">Blog</Link>
-                        <Link href="/blog">Offre</Link>
+                    <MdRssFeed className="cursor-pointer" />
+                    <MdDarkMode className="cursor-pointer" />
+                    <Link href="/blog">Blog</Link>
+                    <Link href="/blog">Offre</Link>
                     <button className="bg-purple-100 py-2 px-4 text-white font-light rounded-xl">Me contacter</button>
                 </div>
             </div>

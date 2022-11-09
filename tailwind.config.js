@@ -22,6 +22,7 @@ module.exports = {
                 'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
             },
             height: {
+                '1.5': '.4rem',
                 '58': '14.5rem',
             },
         },
