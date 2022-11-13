@@ -1,0 +1,78 @@
+.reactMarkDown {
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.reactMarkDown h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.reactMarkDown br {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reactMarkDown h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.reactMarkDown img {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.75rem;
+}
+
+.reactMarkDown p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.reactMarkDown ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style: disc outside none;
+}
+
+.reactMarkDown ul li {
+    margin-left: 2em;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.reactMarkDown ol li {
+    margin-left: 2em;
+    font-size: 1.1rem;
+    font-weight: 400;
+    list-style-type: decimal;
+}
+
+@media (min-width: 1280px) {
+    .reactMarkDown h1 {
+        font-size: 2.25rem;
+    }
+
+    .reactMarkDown img {
+        width: 80%;
+    }
+
+    .reactMarkDown h2 {
+        font-size: 1.5rem;
+    }
+}
