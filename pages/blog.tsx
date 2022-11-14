@@ -2,7 +2,7 @@ import ArticleCard from "@components/ArticleCard"
 
 export async function getStaticProps() {
     const res = await fetch(
-        'http://127.0.0.1:1337/api/articles?populate=*',
+        'https://boiling-garden-52565.herokuapp.com/api/articles?populate=*',
         {
             method: 'GET',
             headers: {
@@ -28,7 +28,7 @@ export default function BlogPage({ articles }: { articles: any }) {
                         title={article.attributes.title}
                         timer={article.attributes.timer}
                         url={article.attributes.slug}
-                        imageUrl={`http://127.0.0.1:1337${article.attributes.coverImage.data.attributes.formats.small.url}`}
+                        imageUrl={`https://boiling-garden-52565.herokuapp.com${article.attributes.coverImage.data.attributes.formats.small.url}`}
                         imageAlt={article.attributes.coverImage.data.attributes.alternativeText}
                     />
                 })}

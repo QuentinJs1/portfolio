@@ -3,7 +3,7 @@ import styles from '@styles/Article.module.css'
 
 export async function getServerSideProps({ params }: { params: any }) {
     const res = await fetch(
-        `http://127.0.0.1:1337/api/articles?filters[slug][$eq]=${params.slug}`,
+        `https://boiling-garden-52565.herokuapp.com/api/articles?filters[slug][$eq]=${params.slug}`,
         {
             method: 'GET',
             headers: {
