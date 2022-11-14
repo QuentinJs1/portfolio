@@ -1,5 +1,6 @@
 import styles from '@styles/Navbar.module.css'
 import { useEffect, useState } from 'react';
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -40,7 +41,7 @@ export default function Navbar() {
                     </div>
                     <div className="flex-shrink-0 sm:flex items-center">
                         <a href="../">
-                            <img width="20" height="20" className="h-8 sm:h-10 w-auto" src="/svg/logo.svg" alt="Quentin.js logo" />
+                            <Image width="20" height="20" className="h-8 sm:h-10 w-auto" src="/svg/logo.svg" alt="Quentin.js logo" />
                         </a>
                     </div>
                     <div className="sm:flex-1 w-8 flex items-center justify-center sm:items-stretch sm:justify-end sm:mr-12">

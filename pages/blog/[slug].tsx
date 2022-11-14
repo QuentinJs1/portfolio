@@ -24,10 +24,9 @@ export async function getServerSideProps({ params }: { params: any }) {
 export default function Article({ article }: { article: any }) {
     return <div className="my-12 flex justify-center w-full">
         <div className="w-full px-4 lg:w-2/5 flex flex-col justify-start items-start xl:items-center">
-            <ReactMarkdown
-                children={article.data[0].attributes.content}
-                className={styles.reactMarkDown}
-            />
+            <ReactMarkdown className={styles.reactMarkDown}>
+                {article.data[0].attributes.content}
+            </ReactMarkdown>
         </div>
     </div>
 }

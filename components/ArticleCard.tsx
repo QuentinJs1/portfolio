@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image'
 
 interface Article {
     title: string;
@@ -13,7 +14,7 @@ export default function ArticleCard({ title, timer, url, imageUrl, imageAlt, cat
     return (
         <div className="group w-full my-8 col-span-2 sm:col-auto md:px-6">
             <Link href={`blog/${url}`}>
-                <img
+                <Image
                     className="group-hover:scale-102 group-hover:cursor-pointer transition w-full h-60 md:h-72 object-cover rounded-lg"
                     src={imageUrl}
                     alt={imageAlt} />
