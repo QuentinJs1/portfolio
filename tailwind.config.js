@@ -8,10 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: '#8934FF',
-        deeppurple: '#1D1B84',
-        darkblue: '#344C80',
-        darkpurple: '#1A154E',
+        dark: '#02021E',
+        purple: '#3719CA',
       },
       boxShadow: {
         sm: '0px 4px 24px 0 rgba(149, 157, 165, 0.2)',

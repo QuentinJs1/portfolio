@@ -7,12 +7,12 @@ import { NextSeo } from 'next-seo';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Banner />
+    <div className='bg-dark overflow-x-hidden'>
+      {/* <Banner /> */}
       <Navbar />
       <Component {...pageProps} />
       <Bottombar />
-    </>
+    </div>
   )
 }
 
