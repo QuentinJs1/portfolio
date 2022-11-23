@@ -1,8 +1,23 @@
+import styles from '@styles/Banner.module.css'
+import Image from 'next/image'
 
 export default function Banner() {
     return (
-        <div className="flex w-screen px-12 min-h-96 text-center justify-center items-center bg-red bg-deeppurple">
-            <p className="text-white text-sm my-2">Le site est encore en dev, c&rsquo;est normal que pas mal de choses marchent pas 😉 !</p>
+        <div className='my-6'>
+            <div className='line-x'/>
+            <div className="flex w-screen py-2 px-12 text-center justify-center items-center">
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+                <p className={` ${styles.movingText} text-lg mx-4`}>Le site est encore en dev !&nbsp;</p>
+            </div>
+            <div className='line-x'/>
         </div>
     )
 }

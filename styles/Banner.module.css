@@ -1,0 +1,18 @@
+.movingText {
+    white-space: nowrap;
+    animation: Scroll 10s linear infinite;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* text-sm my-2 uppercase */
+
+@keyframes Scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    1900% {
+        transform: translate3d(-1500px, 0, 0)
+    }
+}
