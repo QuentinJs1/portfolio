@@ -7,7 +7,7 @@ import Lines from '@components/Lines';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className='bg-dark overflow-x-hidden'>
+    <div className='bg-dark overflow-x-hidden relative'>
       <Lines />
       <Navbar />
       <Component {...pageProps} />

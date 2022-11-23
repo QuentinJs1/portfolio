@@ -21,7 +21,7 @@ export async function getStaticProps() {
 export default function BlogPage({ articles }: { articles: any }) {
     return (
         <>
-            <main className="pt-4 h-full sm:pt-12 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
+            <main className="pt-4 h-screen sm:pt-12 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
                 <div className="w-full grid grid-cols-2">
                     {articles?.data.map((article: any, index: number) => {
                         return <ArticleCard

@@ -12,7 +12,7 @@ export default function Navbar() {
         <nav>
             <div className='sticky mt-8 z-10'>
             <div className='line-x'/>
-            <div className='mx-auto px-6 lg:px-40 w-screen'>
+            <div className='mx-auto px-6 lg:px-40 2xl:px-80 w-screen'>
                 <div className='relative flex items-center justify-between sm:justify-between'>
                     <div className=' inset-y-0 left-0 flex items-center sm:hidden'>
                         <button onClick={() => setMenuOpen(!menuOpen)} type='button' className='inline-flex items-center justify-center p-2 rounded-md text-deeppurple focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white' aria-controls='mobile-menu' aria-expanded='false'>

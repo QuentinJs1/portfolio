@@ -1,18 +1,48 @@
-.movingText {
-    white-space: nowrap;
-    animation: Scroll 10s linear infinite;
+.banner {
+    animation: bannermove 30s linear infinite;
+    display: flex;
+    justify-content: space-between;
     color: white;
+    min-width: 200vw;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
     text-transform: uppercase;
 }
 
-
-/* text-sm my-2 uppercase */
-
-@keyframes Scroll {
-    0% {
-        transform: translate3d(0, 0, 0);
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .banner {
+        min-width: 200vw;
     }
-    1900% {
-        transform: translate3d(-1500px, 0, 0)
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        min-width: 400vw;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .banner {
+        min-width: 600vw;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .banner {
+        min-width: 800vw;
+    }
+}
+
+.banner div {
+    padding: 10px;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
