@@ -18,6 +18,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Quentin.js - Freelance dev web" />
         <meta property="og:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida." />
         <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
+        <meta property="og:url" content="https://quentinjs.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@quentin__js" />
         <meta name="twitter:title" content="Quentin.js - Freelance dev web" />

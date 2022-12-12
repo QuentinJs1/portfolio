@@ -24,6 +24,16 @@ export default function BlogPage({ articles }: { articles: any }) {
             <Head>
                 <title>Blog - Quentin.js</title>
                 <link rel="canonical" href="https://quentinjs.com/blog" key="canonical"/>
+                <meta name="description" content="Blog parlant de 3D, de développement web et de marketing." key="desc" />
+                <meta property="og:title" content="Blog - Quentin.js" />
+                <meta property="og:description" content="Blog parlant de 3D, de développement web et de marketing." />
+                <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
+                <meta property="og:url" content="https://quentinjs.com" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@quentin__js" />
+                <meta name="twitter:title" content="Blog - Quentin.js" />
+                <meta name="twitter:description" content="Blog parlant de 3D, de développement web et de marketing." />
+                <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
             </Head>
             <main className="pt-4 h-screen sm:pt-12 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
                 <div className="w-full grid grid-cols-2">
@@ -34,7 +44,7 @@ export default function BlogPage({ articles }: { articles: any }) {
                             title={article.attributes.title}
                             timer={article.attributes.timer}
                             url={article.attributes.slug}
-                            imageUrl={`https://boiling-garden-52565.herokuapp.com${article.attributes.coverImage.data.attributes.formats.small.url}`}
+                            imageUrl={`${article.attributes.coverImage.data.attributes.formats.small.url}`}
                             imageAlt={article.attributes.coverImage.data.attributes.alternativeText}
                         />
                     })}
