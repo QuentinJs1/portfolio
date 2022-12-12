@@ -36,7 +36,7 @@ module.exports = {
                 px: '0.5px'
             },
             width: {
-                px: '0.5px'
+                px: '0.25px'
             },
         },
         fontFamily: {

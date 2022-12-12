@@ -1,7 +1,11 @@
 import Banner from '@components/Banner'
-import Navbar from '@components/Navbar'
 import type { NextPage } from 'next'
-import { NextSeo } from 'next-seo'
+import { Canvas } from "@react-three/fiber";
+import Experience from '3d/Experience';
+import { StrictMode } from 'react'
+import { Leva } from 'leva'
+import css from "@styles/Home.module.css";
+import { OrthographicCamera } from '@react-three/drei';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +19,18 @@ const Home: NextPage = () => {
             Work with Me
           </button>
         </div>
-        <div className='h-full w-full'></div>
+        <div className={`${css.scene} h-full w-full`}>
+          <StrictMode>
+            <Leva collapsed />
+            <Canvas
+              className={css.canvas}
+              orthographic
+              camera={{ zoom: 112, position: [100, 100, 100] }}
+            >
+              <Experience />
+            </Canvas>
+          </StrictMode>
+        </div>
       </div>
       <div>
         <div className='flex items-center justify-center w-full t-10 text-white uppercase text-xs font-light'>Scroll for more</div>
