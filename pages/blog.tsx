@@ -1,5 +1,5 @@
 import ArticleCard from "@components/ArticleCard"
-import { NextSeo } from "next-seo"
+import Head from 'next/head';
 
 export async function getStaticProps() {
     const res = await fetch(
@@ -21,6 +21,10 @@ export async function getStaticProps() {
 export default function BlogPage({ articles }: { articles: any }) {
     return (
         <>
+            <Head>
+                <title>Blog - Quentin.js</title>
+                <link rel="canonical" href="https://quentinjs.com/blog" key="canonical"/>
+            </Head>
             <main className="pt-4 h-screen sm:pt-12 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
                 <div className="w-full grid grid-cols-2">
                     {articles?.data.map((article: any, index: number) => {

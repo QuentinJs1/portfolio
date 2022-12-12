@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Navbar() {
 
-    const navBarItems = ['projects', 'blog']
+    const navBarItems = ['blog']
 
     const [menuOpen, setMenuOpen] = useState(false)
 
