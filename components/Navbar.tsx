@@ -33,7 +33,7 @@ export default function Navbar() {
                             <div className='hidden sm:block sm:ml-6'>
                                 <div className='flex space-x-20 items-center'>
                                     {navBarItems.map((item, index) =>
-                                        <a key={index} href={item} className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 text-md font-medium`}>
+                                        <a key={index} href={` ../${item} `} className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 text-md font-medium`}>
                                             {item.charAt(0).toUpperCase() + item.slice(1)}
                                         </a>
                                     )}
@@ -48,11 +48,11 @@ export default function Navbar() {
                 <div className='line-x' />
                 <div className={`${menuOpen ? 'block' : 'hidden'} sm:hidden' id='mobile-menu`}>
                     <div className='mt-12 px-2 pt-2 pb-3 space-y-1 h-screen flex flex-col items-center text-white'>
-                        <a href='../' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>Accueil</a>
+                        <a href='../../' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>Accueil</a>
                         {navBarItems.map((item, index) =>
                             <a
                                 key={index}
-                                href={item}
+                                href={` ../${item} `}
                                 onClick={() => setMenuOpen(!menuOpen)}
                                 className='hover:bg-purple hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
                                 {item.charAt(0).toUpperCase() + item.slice(1)}
