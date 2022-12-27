@@ -31,7 +31,7 @@ export default function Question({ question, response }: Props) {
                     ><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
                 </div>
             </div>
-            <p className={`${isOpen ? 'text-open' : 'hidden'} text-left text-grey-200 pr-4 pt-4 md:text-lg`}>
+            <p className={`${isOpen ? 'text-open' : 'hidden'} text-left text-grey-200 pr-4 pt-4 md:text-base`}>
                 {lines.map((line, index) => (
                     <React.Fragment key={index}>
                         {line}
