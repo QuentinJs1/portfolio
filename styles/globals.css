@@ -2,11 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
     .line-x {
-        @apply w-screen bg-gray h-px
+        @apply w-screen bg-grey-500 h-px
     }
+
     .line-y {
-        @apply h-full bg-gray w-px absolute
+        @apply h-full bg-grey-500 w-px absolute
     }
 }

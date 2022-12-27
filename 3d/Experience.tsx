@@ -9,12 +9,7 @@ export default function Experience() {
         perfVisible: true
     })
 
-    // const { nodes } = useGLTF('./model/portal.glb')
-
-    // const bakedTexture = useTexture('./model/baked.jpg')
-    // bakedTexture.flipY = false
-
-    // const portalMaterial = useRef()
+    const model = useGLTF('./models/assembly-line-test.glb')
 
     return <>
 
@@ -25,7 +20,7 @@ export default function Experience() {
         <directionalLight position={[1, 2, 3]} intensity={1.5} />
         <ambientLight intensity={0.5} />
 
-        {/* <primitive object={model.scene} scale={0.5} position-y={-1} /> */}
+        <primitive object={model.scene} scale={0.5} position-y={-1} />
 
     </>
 }

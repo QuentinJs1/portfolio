@@ -10,7 +10,12 @@ module.exports = {
             colors: {
                 dark: '#02021E',
                 purple: '#3719CA',
-                gray: '#474755',
+                lightPurple: '#877BD5',
+                grey: {
+                    200: '#D0D0D0',
+                    500: '#474755',
+                    700: '#2B2B38',
+                },
             },
             boxShadow: {
                 sm: '0px 4px 24px 0 rgba(149, 157, 165, 0.2)',
