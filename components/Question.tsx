@@ -12,7 +12,7 @@ export default function Question({ question, response }: Props) {
     const lines = response.split('\n');
 
     return (
-        <button className=" pt-8" onClick={() => setIsQuestion(!isOpen)}>
+        <button className="lg:max-w-3xl lg:min-w-3xl pt-8" onClick={() => setIsQuestion(!isOpen)}>
             <div className="flex flex-row justify-between toast">
                 <p className="text-lg font-medium text-left md:text-xl">{question}</p>
                 <div>
@@ -25,13 +25,13 @@ export default function Question({ question, response }: Props) {
                         fill="none"
                         color="#98a6bb"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                     ><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
                 </div>
             </div>
-            <p className={`${isOpen ? 'text-open' : 'hidden'} text-left text-grey-200 pr-4 pt-4 md:text-base`}>
+            <p className={`${isOpen ? 'text-open' : 'hidden'} text-left text-grey-200 pr-4 pt-4 md:text-base lg:max-w-2xl`}>
                 {lines.map((line, index) => (
                     <React.Fragment key={index}>
                         {line}
