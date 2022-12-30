@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
 
-    const navBarItems = ['a propos', 'services', 'portfolio', 'blog']
+    const navBarItems = ['a propos', 'services', 'réalisations', 'blog']
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -13,7 +13,7 @@ export default function Navbar() {
         <nav>
             <div className='sticky mt-8 z-10'>
                 <div className='line-x' />
-                <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 2xl:px-80 w-full'>
+                <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 w-full'>
                     <div className='relative flex items-center justify-between'>
                         <Link href='/' className='flex items-center'>
                             <Image width='120' height='120' className='h-12 md:h-12 w-auto' src='/images/logo.png' alt='Quentin.js logo' />
@@ -33,11 +33,18 @@ export default function Navbar() {
                         <div className='md:flex-1 w-8 hidden items-center justify-center md:items-stretch md:justify-end text-white lg:block'>
                             <div className='md:ml-6'>
                                 <div className='flex space-x-20 items-center justify-end'>
-                                    {navBarItems.map((item, index) =>
-                                        <Link key={index} href={` /${item} `} className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
-                                            {item.charAt(0).toUpperCase() + item.slice(1)}
-                                        </Link>
-                                    )}
+                                    <Link href='/a-propos' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                        A propos
+                                    </Link>
+                                    <Link href='/services' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                        Services
+                                    </Link>
+                                    <Link href='/realisations' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                        Réalisations
+                                    </Link>
+                                    <Link href='/blog' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                        Blog
+                                    </Link>
                                     <Link href='/contact'>
                                         <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
                                             Contactez nous
@@ -69,6 +76,5 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
-
     )
 }
