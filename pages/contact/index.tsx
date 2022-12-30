@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <main className="h-screen flex flex-col justify-start">
+        <main className="min-h-screen flex flex-col justify-start">
             <section className="mt-8 text-white mx-4 md:max-w-2xl md:mx-auto">
                 <div className="bg-red-600 rounded-md text-sm text-center py-3 px-4 mt-6">Il y a actuellement beaucoup de demandes pour nos services, il est possible que nous ne soyons pas en mesure de travailler sur votre site web avant quelques temps. Néanmoins, nous répondrons à votre demande en moins de 24 heures pour vous apporter plus de précisions.</div>
                 <h1 className="mt-8 flex justify-center font-bold text-2xl">Contactez nous</h1>

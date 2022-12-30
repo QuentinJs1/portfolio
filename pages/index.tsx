@@ -8,16 +8,16 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Quentin.js - Freelance dev web</title>
+        <title>Luden - Freelance dev web</title>
         <link rel="canonical" href="https://quentinjs.com" key="canonical" />
         <meta name="description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." key="desc" />
-        <meta property="og:title" content="Quentin.js - Freelance dev web" />
+        <meta property="og:title" content="Luden - Freelance dev web" />
         <meta property="og:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida." />
         <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
         <meta property="og:url" content="https://quentinjs.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@quentin__js" />
-        <meta name="twitter:title" content="Quentin.js - Freelance dev web" />
+        <meta name="twitter:title" content="Luden - Freelance dev web" />
         <meta name="twitter:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." />
         <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
       </Head>
@@ -141,6 +141,7 @@ const Home: NextPage = () => {
             Mon nom est Quentin C., je suis un jeune diplômé d’un master informatique spécialisé dans l’ingénierie web.
             <br /><br />
             Après plus de 4 ans à faire des sites web et à m'intéresser au design, j'ai décidé de mettre mes compétences au profit des petites entreprises, car je pense qu'elles méritent elles aussi le traitement des 'grandes'.
+            <Link href="/a-propos"><strong className='text-white font-semibold underline underline-offset-2 decoration-4  decoration-purple-500'> En savoir plus</strong></Link>
           </p>
         </section>
         <section className="bg-grey-100 flex flex-col my-10 py-16 px-8 md:px-20 ">

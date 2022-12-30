@@ -16,8 +16,8 @@ export default function Navbar() {
                 <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 w-full'>
                     <div className='relative flex items-center justify-between'>
                         <Link href='/' className='flex items-center'>
-                            <Image width='120' height='120' className='h-12 md:h-12 w-auto' src='/images/logo.png' alt='Quentin.js logo' />
-                            <div className='text-white font-medium ml-3 text-lg'>quentin.js</div>
+                            <Image width='80' height='80' className='h-10 w-auto' src='/images/logo.png' alt='Luden logo' />
+                            <div className='text-white font-semibold ml-3 text-2xl'>Luden</div>
                         </Link>
                         <div className='flex items-center lg:hidden'>
                             <button onClick={() => setMenuOpen(!menuOpen)} type='button' className='inline-flex items-center justify-center p-2 rounded-md text-deeppurple focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white' aria-controls='mobile-menu' aria-expanded='false'>

@@ -22,16 +22,16 @@ export default function BlogPage({ articles }: { articles: any }) {
     return (
         <>
             <Head>
-                <title>Blog - Quentin.js</title>
-                <link rel="canonical" href="https://quentinjs.com/blog" key="canonical"/>
+                <title>Blog - Luden</title>
+                <link rel="canonical" href="https://quentinjs.com/blog" key="canonical" />
                 <meta name="description" content="Blog parlant de 3D, de développement web et de marketing." key="desc" />
-                <meta property="og:title" content="Blog - Quentin.js" />
+                <meta property="og:title" content="Blog - Luden" />
                 <meta property="og:description" content="Blog parlant de 3D, de développement web et de marketing." />
                 <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
                 <meta property="og:url" content="https://quentinjs.com" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@quentin__js" />
-                <meta name="twitter:title" content="Blog - Quentin.js" />
+                <meta name="twitter:title" content="Blog - Luden" />
                 <meta name="twitter:description" content="Blog parlant de 3D, de développement web et de marketing." />
                 <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
             </Head>

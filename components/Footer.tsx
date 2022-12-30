@@ -3,9 +3,12 @@ import Link from 'next/link'
 
 export default function Footer() {
     return (
-        <footer className="mt-20 ">
+        <footer className="mt-28 ">
             <div className='mx-6 text-white md:text-md md:flex md:flex-row md:mx-auto md:max-w-2xl lg:max-w-4xl lg:flex lg:justify-around'>
-                <Image width='120' height='120' className='h-12 sm:h-12 w-auto' src='/images/logo.png' alt='Quentin.js logo' />
+                <Link href='/' className='flex items-center'>
+                    <Image width='80' height='80' className='h-10 w-auto' src='/images/logo.png' alt='Luden logo' />
+                    <div className='text-white font-semibold ml-3 text-2xl'>Luden</div>
+                </Link>
                 <section className="grid grid-cols-2 gap-4 text-sm mt-14 md:text-base md:mt-0 md:ml-40">
                     <div>
                         <h3>Services</h3>
@@ -28,7 +31,7 @@ export default function Footer() {
             <section
                 className="flex flex-col items-center text-sm text-gray-500 mt-8 md:items-center md:justify-between"
             >
-                <div className="md:mt-0 pb-4">© 2022 Quentin.js · All rights reserved.</div>
+                <div className="md:mt-0 pb-4">© 2022 Luden · All rights reserved.</div>
             </section>
         </footer>
     )

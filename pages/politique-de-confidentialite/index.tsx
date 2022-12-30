@@ -1,7 +1,7 @@
 export default function PolitiqueDeConfidentialite() {
     return (
         <section className="mt-28 text-white mx-6 md:max-w-2xl md:mx-auto">
-            <h1 className="flex justify-center font-bold text-2xl">Politique de confidentialité de Quentin.js</h1>
+            <h1 className="flex justify-center font-bold text-2xl">Politique de confidentialité de Luden</h1>
             <p className="pt-12">Nous prenons très au sérieux la protection de vos données personnelles et nous nous engageons à respecter votre vie privée. Cette politique de confidentialité vous informe de la manière dont nous collectons et utilisons les informations que vous nous fournissez lorsque vous utilisez notre site web ou que vous nous contactez.</p>
             <h2 className="pt-12 font-semibold">1. Collecte et utilisation des informations</h2>
             <p className="pt-6">Nous collectons uniquement votre adresse e-mail et le message que vous nous envoyez lorsque vous utilisez notre formulaire de contact. Ces informations sont utilisées exclusivement pour répondre à vos demandes et pour réaliser des sites web pour vous. Nous ne collectons pas d'autres informations personnelles, telles que votre nom ou votre adresse postale.</p>
