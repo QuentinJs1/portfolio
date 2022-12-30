@@ -46,12 +46,12 @@ const Home: NextPage = () => {
           '>
             <h2 className='text-3xl font-semibold md:text-4xl lg:text-3xl'>Pourquoi nous ?</h2>
             <p className='text-sm text-grey-200 pt-12 text-center md:text-base'>
-              Nous sommes spécialisés dans le design et le développement web pour les petites et moyennes entreprises. Notre mission est de fournir des sites de grande qualité à toutes les entreprises qui en ont besoin, sans qu'elles aient à payer une fortune.</p>
+              Nous sommes spécialisés dans le design et le développement web pour les petites et moyennes entreprises. Notre mission est de fournir des sites de grande qualité à toutes les entreprises qui en ont besoin, sans qu&apos;elles aient à payer une fortune.</p>
           </section>
           <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
             <div>
               <h2 className='text-xl font-semibold lg:text-2xl'>Nous nous occupons de <strong className='text-lightPurple font-semibold'>tout.</strong></h2>
-              <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Vous n'avez pas le temps de vous occuper de votre site web, et c'est bien normal. Nous concevons, déployons et maintenons votre site web autant de temps que vous le souhaiterez. Modifications illimitées, sans engagement.</p>
+              <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Vous n&apos;avez pas le temps de vous occuper de votre site web, et c&apos;est bien normal. Nous concevons, déployons et maintenons votre site web autant de temps que vous le souhaiterez. Modifications illimitées, sans engagement.</p>
             </div>
             <Image width='1500' height='200' className='mt-10 md:max-w-xl md:mx-auto lg:m-auto' src="/images/chill_and_work.webp" alt="Deux illustrations 3D côte à côte, une avec un homme qui se repose sur son transat, l'autre en train de travailler." />
           </section>
@@ -59,28 +59,28 @@ const Home: NextPage = () => {
             <div className='lg:pl-20'>
               <h2 className='text-xl font-semibold lg:text-2xl'>Des sites web <strong className='text-lightPurple font-semibold'>mémorables.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base'>
-                En adoptant les dernières tendances du webdesign ainsi que l'illustration 3D, votre site web sera à la pointe de la modernité. Si notre focus numéro 1 est la facilité d'utilisation, nous incluons aussi de petites animations qui raviront vos utilisateurs.
+                En adoptant les dernières tendances du webdesign ainsi que l&apos;illustration 3D, votre site web sera à la pointe de la modernité. Si notre focus numéro 1 est la facilité d&apos;utilisation, nous incluons aussi de petites animations qui raviront vos utilisateurs.
                 <br /><br />
-                60% du trafic internet vient des téléphones. Nos sites sont donc conçus avant tout pour les mobiles. Ils sont totalement responsives, c'est-à-dire qu'ils fonctionneront aussi bien sur mobile, tablette et pc.</p>
+                60% du trafic internet vient des téléphones. Nos sites sont donc conçus avant tout pour les mobiles. Ils sont totalement responsives, c&apos;est-à-dire qu&apos;ils fonctionneront aussi bien sur mobile, tablette et pc.</p>
             </div>
             <Image width='1200' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/design.webp" alt="Deux illustrations 3D côte à côte, une avec un " />
           </section>
           <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
             <div>
               <h2 className='text-xl font-semibold lg:text-2xl'>Chaque ligne de code est <strong className='text-lightPurple font-semibold'>écrite à la main.</strong></h2>
-              <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Cela assure la meilleure performance possible et permet d'attirer plus de clients sur votre site, et donc de vous rapporter plus de revenus. Nous garantissons également que votre site sera accessible pour tous et naturellement bien classé sur Google.</p>
+              <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Cela assure la meilleure performance possible et permet d&apos;attirer plus de clients sur votre site, et donc de vous rapporter plus de revenus. Nous garantissons également que votre site sera accessible pour tous et naturellement bien classé sur Google.</p>
             </div>
             <Image width='1500' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/lighthouse.webp" alt="3 indicateurs, le premier est performances avec 97%, les deux autres sont accessibilité et SEO à 100%." />
           </section>
         </section>
         <section className='bg-grey-700 my-28 px-6 py-8 md:px-16 lg:rounded-3xl lg:max-w-6xl lg:py-16 lg:mx-auto'>
           <div className='flex flex-col lg:max-w-4xl lg:mx-auto'>
-            <h2 className='text-3xl font-semibold text-center lg:text-3xl'>0€ d’accompte, 150€ par mois.
+            <h2 className='text-3xl font-semibold text-center lg:text-3xl'>0€ d&apos;accompte, 150€ par mois.
               <br />
               <strong className='text-lightPurple font-semibold'>Sans engagement.</strong>
             </h2>
             <p className='text-sm text-grey-200 pt-14 md:text-base lg:text-center lg:max-w-3xl lg:mx-auto'>
-              Obtenez un site de 5 pages standard sans payer un euro à l'avance. Si vous avez besoin de plus (site e-commerce, 3D web, plus de pages...), nous pouvons établir un prix personnalisé en fonction de l'ampleur du travail nécessaire.
+              Obtenez un site de 5 pages standard sans payer un euro à l&apos;avance. Si vous avez besoin de plus (site e-commerce, 3D web, plus de pages...), nous pouvons établir un prix personnalisé en fonction de l&apos;ampleur du travail nécessaire.
               <br /><br />Vous pouvez annuler votre engagement quand vous le souhaitez, sans frais supplémentaires ni tracas. Nous favorisons des collaborations longues et de confiance avec nos clients, plutôt que des projets temporaires.
             </p>
             <section className='pt-8 grid grid-cols-1 my-6 gap-y-12 md:text-base md:gap-x-8 md:grid-cols-2 lg:mt-20'>
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                 <Image width='120' height='120' className='object-cover h-12 lg:pr-2 lg:h-14' src="/images/server.webp" alt="Serveurs avec un bouclier devant, en 3D." />
                 <div className='mx-2'>
                   <h3 className='mt-3 lg:text-lg'>Frais d’hébergement inclus</h3>
-                  <p className='text-sm text-grey-200 pt-4'>Les frais d'hébergement et de nom de domaine sont inclus dans l'abonnement.</p>
+                  <p className='text-sm text-grey-200 pt-4'>Les frais d&apos;hébergement et de nom de domaine sont inclus dans l&apos;abonnement.</p>
                 </div>
               </div>
               <div className='flex flex-row'>
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
             {/* Nous vous invitons à regarder notre travail pour que vous puissiez en <strong className='font-semibold underline underline-offset-2 decoration-2  decoration-purple-500'>juger par vous même.</strong> */}
             Nous facturons seulement à partir du moment où vous serez satisfait et quand votre site sera en ligne.
             Donc vous ne perdrez rien, à part peut-être un peu de temps dans des réunions.
-            Bref, ce qu'on essaie de dire, c'est :
+            Bref, ce qu&apos;on essaie de dire, c&apos;est :
           </p>
           <Link href='/contact' className='flex justify-center mt-12'>
             <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
@@ -137,9 +137,9 @@ const Home: NextPage = () => {
             <label className='mt-2 text-grey-200 md:text-base'>Fondateur / Développeur</label>
           </div>
           <p className='text-sm text-grey-200 pt-14 md:text-base lg:max-w-3xl lg:mx-auto'>
-            Mon nom est Quentin C., je suis un jeune diplômé d’un master informatique spécialisé dans l’ingénierie web.
+            Mon nom est Quentin C., je suis un jeune diplômé dun master informatique spécialisé dans l&apos;ingénierie web.
             <br /><br />
-            Après plus de 4 ans à faire des sites web et à m'intéresser au design, j'ai décidé de mettre mes compétences au profit des petites entreprises, car je pense qu'elles méritent elles aussi le traitement des 'grandes'.
+            Après plus de 4 ans à faire des sites web et à m&apos;intéresser au design, j&apos;ai décidé de mettre mes compétences au profit des petites entreprises, car je pense qu&apos;elles méritent elles aussi le traitement des &apos;grandes&apos;.
             <Link href="/a-propos"><strong className='text-white font-semibold underline underline-offset-2 decoration-4  decoration-purple-500'> En savoir plus</strong></Link>
           </p>
         </section>
@@ -170,7 +170,7 @@ const Home: NextPage = () => {
                 question="Faites-vous du SEO ?"
                 response={`Nos sites web sont conçus pour avoir les bases du SEO, c'est-à-dire que Google aura tout ce dont il a besoin pour indexer votre site (bonnes pratiques, fichiers nécessaires à l'enregistrement, etc.).
                 
-                Cependant, nous ne proposons pas encore de stratégies SEO complètes, avec une recherche approfondie et l'écriture d'articles.`}
+                Cependant, nous ne proposons pas encore de stratégies SEO complètes, avec une recherche approfondie et l'écriture d'articles."`}
               />
               <Question
                 question="Puis-je changer ma formule plus tard ?"
