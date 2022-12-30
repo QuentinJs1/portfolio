@@ -23,7 +23,7 @@ export default function ArticleCard({ title, timer, url, imageUrl, imageAlt, cat
             </Link>
             <div className="mt-4 flex flex-row justify-between text-xs text-darkgray uppercase font-semibold ">
                 <div className="flex flex-row items-center ">
-                    <p className="bg-purple py-1 px-2 rounded-md">{category}</p>
+                    <p className="bg-purple-500 py-1 px-2 rounded-md">{category}</p>
                     <p className="mx-2 text-xs">-</p>
                     <p className="font-light">{timer} minutes de lecture</p>
                 </div>

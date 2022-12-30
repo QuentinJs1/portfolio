@@ -1,10 +1,11 @@
 import styles from '@styles/Navbar.module.css'
 import { useState } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navbar() {
 
-    const navBarItems = ['services', 'portfolio', 'blog']
+    const navBarItems = ['a propos', 'services', 'portfolio', 'blog']
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -12,13 +13,13 @@ export default function Navbar() {
         <nav>
             <div className='sticky mt-8 z-10'>
                 <div className='line-x' />
-                <div className='mx-auto px-6 lg:max-w-6xl lg:px-0 2xl:px-80 w-full'>
+                <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 2xl:px-80 w-full'>
                     <div className='relative flex items-center justify-between'>
-                        <a href='../' className='flex items-center'>
+                        <Link href='/' className='flex items-center'>
                             <Image width='120' height='120' className='h-12 md:h-12 w-auto' src='/images/logo.png' alt='Quentin.js logo' />
                             <div className='text-white font-medium ml-3 text-lg'>quentin.js</div>
-                        </a>
-                        <div className='flex items-center md:hidden'>
+                        </Link>
+                        <div className='flex items-center lg:hidden'>
                             <button onClick={() => setMenuOpen(!menuOpen)} type='button' className='inline-flex items-center justify-center p-2 rounded-md text-deeppurple focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white' aria-controls='mobile-menu' aria-expanded='false'>
                                 <span className='sr-only'>Open main menu</span>
                                 <svg className={`${menuOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='#fff' aria-hidden='true'>
@@ -33,13 +34,15 @@ export default function Navbar() {
                             <div className='md:ml-6'>
                                 <div className='flex space-x-20 items-center justify-end'>
                                     {navBarItems.map((item, index) =>
-                                        <a key={index} href={` ../${item} `} className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 text-md font-medium`}>
+                                        <Link key={index} href={` /${item} `} className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                             {item.charAt(0).toUpperCase() + item.slice(1)}
-                                        </a>
+                                        </Link>
                                     )}
-                                    <button className='bg-purple py-3 px-5 rounded-lg text-md font-medium   '>
-                                        Contactez nous
-                                    </button>
+                                    <Link href='/contact'>
+                                        <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
+                                            Contactez nous
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -48,16 +51,20 @@ export default function Navbar() {
                 <div className='line-x' />
                 <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden' id='mobile-menu`}>
                     <div className='mt-12 px-2 pt-2 pb-3 space-y-1 h-screen flex flex-col items-center text-white'>
-                        <a href='../../' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>Accueil</a>
+                        <Link href='/' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>Accueil</Link>
                         {navBarItems.map((item, index) =>
-                            <a
+                            <Link
                                 key={index}
-                                href={` ../${item} `}
-                                onClick={() => setMenuOpen(!menuOpen)}
-                                className='hover:bg-purple hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                                href={` /${item} `}
+                                className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
                                 {item.charAt(0).toUpperCase() + item.slice(1)}
-                            </a>
+                            </Link>
                         )}
+                        <Link href='/contact' className='pt-2'>
+                            <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg text-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
+                                Contactez nous
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

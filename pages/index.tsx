@@ -2,6 +2,7 @@ import Question from '@components/Question';
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import Image from 'next/image'
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -28,13 +29,13 @@ const Home: NextPage = () => {
                 Les petites entreprises ont  aussi le droit à des supers sites web
               </h1>
               <h2 className="my-6 font-light text-whiute md:leading-8 md:text-lg">
-                Pas de Wordpress ou de no code - Nous offrons des sites modernes, performants et <strong className='font-bold underline underline-offset-4 decoration-4  decoration-purple'>100% codés à la main</strong> à partir de 150 €/mois.
+                Pas de Wordpress ou de no code - Nous offrons des sites modernes, performants et <strong className='font-bold underline underline-offset-4 decoration-4 decoration-purple-500'>100% codés à la main</strong> à partir de 150 €/mois.
               </h2>
-              <div className="flex flex-col gap-4 w-full md:flex-row md:w-auto md:justify-center lg:justify-start">
-                <button className='w-full py-4 bg-purple rounded-lg hover:bg-purple transition-colors mt-10 md:w-fit md:px-5 md:py-3 lg:mt-6'>
-                  Contactez nous
-                </button>
-              </div>
+              <Link href='/contact' className="mt-12 flex flex-col gap-4 w-full md:flex-row md:w-auto md:justify-center lg:justify-start">
+                  <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
+                      Contactez nous
+                  </button>
+              </Link>
             </div>
             <Image width='1400' height='1400' className='mt-20 lg:mt-6' src="/images/main-image.webp" alt="Scène 3D où un petit robot surveille une chaîne d'assemblage, assisté par un bras motorisé." />
           </div>
@@ -118,7 +119,7 @@ const Home: NextPage = () => {
         <section className='flex flex-col my-16 mx-6 md:px-16 lg:max-w-3xl lg:mx-auto'>
           <h2 className='text-3xl font-semibold text-center'>Comment je peux être sûr que vos sites sont de bonne qualité ?</h2>
           <p className='text-sm text-grey-200 pt-14 md:text-base lg:text-center'>
-            Nous vous invitons à regarder notre travail pour que vous puissiez en <strong className='font-semibold underline underline-offset-2 decoration-2  decoration-purple'>juger par vous même.</strong>
+            Nous vous invitons à regarder notre travail pour que vous puissiez en <strong className='font-semibold underline underline-offset-2 decoration-2  decoration-purple-500'>juger par vous même.</strong>
             Quoi qu’il en soit, nous facturons qu’à partir du moment où vous serez satisfait, et
             quand votre site sera en ligne.
             <br /><br />
@@ -126,11 +127,11 @@ const Home: NextPage = () => {
             <br />
             Bref, ce qu’on essaye de dire, c’est :
           </p>
-          <div className='flex justify-center'>
-            <button className='w-full py-4 bg-purple rounded-lg flex justify-center hover:bg-purple transition-colors mt-10 md:w-fit md:px-5 md:py-3 lg:text-lg'>
-              Contactez nous
-            </button>
-          </div>
+          <Link href='/contact' className='flex justify-center mt-12'>
+              <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
+                  Contactez nous
+              </button>
+          </Link>
         </section>
         <section className='flex flex-col my-16 mx-6 pt-16 md:px-16 lg:py-20'>
             <h2 className='text-3xl font-semibold text-center lg:text-3xl'>Qui sommes-nous ?</h2>
