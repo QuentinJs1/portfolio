@@ -9,7 +9,7 @@ export default function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Adresse mail"
+                        placeholder="Votre adresse mail"
                         required
                         className="rounded-md py-2 px-3 font-regular bg-grey-500 text-sm text-white"
                     />
@@ -17,7 +17,7 @@ export default function Contact() {
                         id="message"
                         name="message"
                         required
-                        placeholder="Votre demande..."
+                        placeholder="Dites-nous quelle est votre activité et, si vous avez une idée, quel genre de site web vous souhaiteriez avoir"
                         rows={10}
                         className="rounded-lg py-2 px-3 font-regular bg-grey-500 mt-6 text-sm text-white"
                     />

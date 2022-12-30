@@ -39,9 +39,9 @@ export default function Navbar() {
                                     <Link href='/services' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Services
                                     </Link>
-                                    <Link href='/realisations' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                    {/* <Link href='/realisations' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Réalisations
-                                    </Link>
+                                    </Link> */}
                                     <Link href='/blog' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Blog
                                     </Link>

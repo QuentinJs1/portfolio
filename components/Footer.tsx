@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="mt-28 ">
             <div className='mx-6 text-white md:text-md md:flex md:flex-row md:mx-auto md:max-w-2xl lg:max-w-4xl lg:flex lg:justify-around'>
-                <Link href='/' className='flex items-center'>
+                <Link href='/' className='flex items-center md:items-start'>
                     <Image width='80' height='80' className='h-10 w-auto' src='/images/logo.png' alt='Luden logo' />
                     <div className='text-white font-semibold ml-3 text-2xl'>Luden</div>
                 </Link>

@@ -118,9 +118,8 @@ const Home: NextPage = () => {
         <section className='flex flex-col my-16 mx-6 md:px-16 lg:max-w-3xl lg:mx-auto'>
           <h2 className='text-3xl font-semibold text-center'>Comment puis-je être sûr que vos sites sont de bonne qualité ?</h2>
           <p className='text-sm text-grey-200 pt-14 md:text-base lg:text-center'>
-            Nous vous invitons à regarder notre travail pour que vous puissiez en <strong className='font-semibold underline underline-offset-2 decoration-2  decoration-purple-500'>juger par vous même.</strong>
-            Quoi qu'il en soit, nous facturons seulement à partir du moment où vous serez satisfait et quand votre site sera en ligne.
-            <br /><br />
+            {/* Nous vous invitons à regarder notre travail pour que vous puissiez en <strong className='font-semibold underline underline-offset-2 decoration-2  decoration-purple-500'>juger par vous même.</strong> */}
+            Nous facturons seulement à partir du moment où vous serez satisfait et quand votre site sera en ligne.
             Donc vous ne perdrez rien, à part peut-être un peu de temps dans des réunions.
             Bref, ce qu'on essaie de dire, c'est :
           </p>
@@ -156,7 +155,7 @@ const Home: NextPage = () => {
 
                 Pour les sites dynamiques, nous utilisons SvelteKit. 
                 
-                Nos sites comprenant de la 3D sont conçus avec Next.js en utilisant la librairie react-three-fiber."
+                Nos sites comprenant de la 3D sont conçus avec Next.js en utilisant la librairie react-three-fiber.
                 `}
               />
               <Question
@@ -171,13 +170,13 @@ const Home: NextPage = () => {
                 question="Faites-vous du SEO ?"
                 response={`Nos sites web sont conçus pour avoir les bases du SEO, c'est-à-dire que Google aura tout ce dont il a besoin pour indexer votre site (bonnes pratiques, fichiers nécessaires à l'enregistrement, etc.).
                 
-                Cependant, nous ne proposons pas encore de stratégies SEO complètes, avec une recherche approfondie et l'écriture d'articles."`}
+                Cependant, nous ne proposons pas encore de stratégies SEO complètes, avec une recherche approfondie et l'écriture d'articles.`}
               />
               <Question
                 question="Puis-je changer ma formule plus tard ?"
                 response={`Oui, si après plusieurs mois vous souhaitez avoir la main sur votre site web, vous pouvez toujours nous régler la valeur du site moins la totalité des paiements versés pendant votre abonnement. Nos tarifs commencent à 3000 €. 
                 
-                Par exemple, si vous êtes client depuis 6 mois avec un abonnement de 150 €/mois, vous pourrez acheter le site pour 3000 - 6 * 150 = 2100 €."`}
+                Par exemple, si vous êtes client depuis 6 mois avec un abonnement de 150 €/mois, vous pourrez acheter le site pour 3000 - 6 * 150 = 2100 €.`}
               />
               <Question
                 question="Je ne connais rien à l’informatique ou au web, est-ce un souci ?"
