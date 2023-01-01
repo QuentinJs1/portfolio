@@ -1,4 +1,35 @@
+import { useState } from 'react'
+
 export default function Contact() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault()
+        let data = {
+            email,
+            message
+        }
+
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then((res) => {
+            console.log('Response received')
+            if (res.status === 200) {
+              console.log('Response succeeded!')
+              setSubmitted(true)
+              setEmail('')
+            }
+        })
+    }
+
     return (
         <main className="min-h-screen flex flex-col justify-start">
             <section className="mt-8 text-white mx-4 md:max-w-2xl md:mx-auto">
@@ -6,14 +37,25 @@ export default function Contact() {
                 <h1 className="mt-8 flex justify-center font-bold text-2xl">Contactez nous</h1>
                 <form className="flex flex-col bg-grey-700 w-full max-w-3xl py-6 px-6 rounded-xl mt-6 md:max-w-lg md:mx-auto" action="/send-data-here" method="post">
                     <input
+                        onChange={(e)=>{setName(e.target.value)}} 
+                        type="name"
+                        id="name"
+                        name="name"
+                        placeholder="Votre nom"
+                        required
+                        className="rounded-md py-2 px-3 font-regular bg-grey-500 text-sm text-white"
+                    />
+                    <input
+                        onChange={(e)=>{setEmail(e.target.value)}} 
                         type="email"
                         id="email"
                         name="email"
                         placeholder="Votre adresse mail"
                         required
-                        className="rounded-md py-2 px-3 font-regular bg-grey-500 text-sm text-white"
+                        className="rounded-md py-2 px-3 font-regular bg-grey-500 text-sm mt-6 text-white"
                     />
                     <textarea
+                        onChange={(e)=>{setMessage(e.target.value)}} 
                         id="message"
                         name="message"
                         required
@@ -22,7 +64,7 @@ export default function Contact() {
                         className="rounded-lg py-2 px-3 font-regular bg-grey-500 mt-6 text-sm text-white"
                     />
                     <div className="md:flex md:justify-center">
-                        <button type="submit" className='w-full mt-6 py-3 px-8 font-medium text-sm bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 hover:bg-purple-300'>
+                        <button type="submit" onClick={(e)=>{handleSubmit(e)}} className='w-full mt-6 py-3 px-8 font-medium text-sm bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 hover:bg-purple-300'>
                             Envoyer
                         </button>
                     </div>

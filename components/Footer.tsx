@@ -29,7 +29,7 @@ export default function Footer() {
                 </section>
             </div>
             <section
-                className="flex flex-col items-center text-sm text-gray-500 mt-8 md:items-center md:justify-between"
+                className="flex flex-col items-center text-sm text-gray-200 mt-8 md:items-center md:justify-between"
             >
                 <div className="md:mt-0 pb-4">© 2022 Luden · All rights reserved.</div>
             </section>
