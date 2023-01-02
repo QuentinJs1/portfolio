@@ -35,7 +35,8 @@ export default function BlogPage({ articles }: { articles: any }) {
                 <meta name="twitter:description" content="Blog parlant de 3D, de développement web et de marketing." />
                 <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
             </Head>
-            <main className="pt-4 h-screen sm:pt-12 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
+            <main className="h-screen mt-16 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
+                <h1 className="flex justify-center font-bold text-2xl text-white">Blog</h1>
                 <div className="w-full grid grid-cols-2">
                     {articles?.data.map((article: any, index: number) => {
                         return <ArticleCard

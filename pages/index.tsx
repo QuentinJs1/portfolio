@@ -53,7 +53,7 @@ const Home: NextPage = () => {
               <h2 className='text-xl font-semibold lg:text-2xl'>Nous nous occupons de <strong className='text-lightPurple font-semibold'>tout.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Vous n&apos;avez pas le temps de vous occuper de votre site web, et c&apos;est bien normal. Nous concevons, déployons et maintenons votre site web autant de temps que vous le souhaiterez. Modifications illimitées, sans engagement.</p>
             </div>
-            <Image width='1500' height='200' className='mt-10 md:max-w-xl md:mx-auto lg:m-auto' src="/images/chill_and_work.webp" alt="Deux illustrations 3D côte à côte, une avec un homme qui se repose sur son transat, l'autre en train de travailler." />
+            <Image width='1500' height='200' className='mt-10 md:max-w-xl md:mx-auto lg:m-auto' src="/images/chill-and-work.png" alt="Deux illustrations 3D côte à côte, une avec un homme qui se repose sur son transat, l'autre en train de travailler." />
           </section>
           <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row-reverse lg:mx-auto lg:items-center'>
             <div className='lg:pl-20'>
@@ -63,14 +63,14 @@ const Home: NextPage = () => {
                 <br /><br />
                 60% du trafic internet vient des téléphones. Nos sites sont donc conçus avant tout pour les mobiles. Ils sont totalement responsives, c&apos;est-à-dire qu&apos;ils fonctionneront aussi bien sur mobile, tablette et pc.</p>
             </div>
-            <Image width='1200' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/design.webp" alt="Deux illustrations 3D côte à côte, une avec un " />
+            <Image width='1200' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/design.png" alt="Deux illustrations 3D côte à côte, une avec un " />
           </section>
           <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
             <div>
               <h2 className='text-xl font-semibold lg:text-2xl'>Chaque ligne de code est <strong className='text-lightPurple font-semibold'>écrite à la main.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Cela assure la meilleure performance possible et permet d&apos;attirer plus de clients sur votre site, et donc de vous rapporter plus de revenus. Nous garantissons également que votre site sera accessible pour tous et naturellement bien classé sur Google.</p>
             </div>
-            <Image width='1500' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/lighthouse.webp" alt="3 indicateurs, le premier est performances avec 97%, les deux autres sont accessibilité et SEO à 100%." />
+            <Image width='1500' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/lighthouse.png" alt="3 indicateurs, le premier est performances avec 97%, les deux autres sont accessibilité et SEO à 100%." />
           </section>
         </section>
         <section className='bg-grey-700 my-28 px-6 py-8 md:px-16 lg:rounded-3xl lg:max-w-6xl lg:py-16 lg:mx-auto'>

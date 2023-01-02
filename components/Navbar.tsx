@@ -5,8 +5,6 @@ import Link from 'next/link'
 
 export default function Navbar() {
 
-    const navBarItems = ['a propos', 'services', 'réalisations', 'blog']
-
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
@@ -58,16 +56,22 @@ export default function Navbar() {
                 <div className='line-x' />
                 <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden' id='mobile-menu`}>
                     <div className='mt-12 px-2 pt-2 pb-3 space-y-1 h-screen flex flex-col items-center text-white'>
-                        <Link href='/' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>Accueil</Link>
-                        {navBarItems.map((item, index) =>
-                            <Link
-                                key={index}
-                                href={` /${item} `}
-                                className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
-                                {item.charAt(0).toUpperCase() + item.slice(1)}
-                            </Link>
-                        )}
-                        <Link href='/contact' className='pt-2'>
+                        <Link href='/' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            Accueil
+                        </Link>
+                        <Link href='/a-propos' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            A propos
+                        </Link>
+                        <Link href='/services' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            Services
+                        </Link>
+                        {/* <Link href='/realisations' className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            Réalisations
+                        </Link> */}
+                        <Link href='/blog' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            Blog
+                        </Link>
+                        <Link href='/contact' onClick={() => setMenuOpen(!menuOpen)} className='pt-2'>
                             <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg text-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
                                 Contactez nous
                             </button>
