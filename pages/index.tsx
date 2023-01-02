@@ -9,17 +9,17 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Luden - Freelance dev web</title>
-        <link rel="canonical" href="https://quentinjs.com" key="canonical" />
+        <link rel="canonical" href="https://luden.fr" key="canonical" />
         <meta name="description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." key="desc" />
         <meta property="og:title" content="Luden - Freelance dev web" />
         <meta property="og:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida." />
-        <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
-        <meta property="og:url" content="https://quentinjs.com" />
+        <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
+        <meta property="og:url" content="https://luden.fr" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@quentin__js" />
         <meta name="twitter:title" content="Luden - Freelance dev web" />
         <meta name="twitter:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." />
-        <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
+        <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
       </Head>
       <main className='text-white'>
         <section className='flex flex-col justify-center w-full px-6 pt-12 pb-20 text-center md:mx-auto md:px-16 md:pt-20 md:max-w-4xl lg:max-w-7xl lg:pt-0'>

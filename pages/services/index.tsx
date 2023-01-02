@@ -91,7 +91,7 @@ export default function Services() {
                             </li>
                             <li className="mt-2 flex items-center">
                                 <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                Systèmes d'authentification
+                                Systèmes d&apos;authentification
                             </li>
                             <li className="mt-2 flex items-center">
                                 <svg className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
@@ -108,17 +108,17 @@ export default function Services() {
             </section>
             <section className='max-w-2xl mt-12 mx-6 '>
                 <h2 className='mt-12 font-semibold text-2xl'>Des sites web conçus de manière différente</h2>
-                <p className='mt-6 font-regular text-grey-200'>Nous n'utilisons pas de générateurs de pages comme Wordpress, Shopify, Wix ou autres. Tous nos sites web sont codés à la main. Cela nous permet d'avoir un contrôle total sur le design et d'avoir sites web très rapides.</p>
+                <p className='mt-6 font-regular text-grey-200'>Nous n&apos;utilisons pas de générateurs de pages comme Wordpress, Shopify, Wix ou autres. Tous nos sites web sont codés à la main. Cela nous permet d&apos;avoir un contrôle total sur le design et d&apos;avoir sites web très rapides.</p>
                 <p className='mt-6 font-regular text-grey-200'>Les sites auto-générés sont lents, car ils ont beaucoup de code inutile dont on ne peut pas se débarraser. Hors dans le monde du web, les sites les plus rapides et les mieux organisés sont les grands gagnants.</p>
             </section>
             <section className='max-w-2xl mt-12 mx-6 '>
                 <h2 className='mt-12 font-semibold text-2xl'>Du contenu de qualité</h2>
-                <p className='mt-6 font-regular text-grey-200'>Sur internet, le contenu est roi. Si une agence vous dit qu'elle peut faire monter votre site en première page de Google en trois mois, méfiez-vous ! Le SEO (Search Engine Optimization) peut prendre des années à se mettre en place. </p>
+                <p className='mt-6 font-regular text-grey-200'>Sur internet, le contenu est roi. Si une agence vous dit qu&apos;elle peut faire monter votre site en première page de Google en trois mois, méfiez-vous ! Le SEO (Search Engine Optimization) peut prendre des années à se mettre en place. </p>
                 <p className='mt-6 font-regular text-grey-200'>Nos sites offrent les bases nécessaires pour que vos sites soient bien indexés sur Google. Nous utilisons plusieurs techniques pour obtenir les meilleurs résultats possibles :</p>
                 <ul className="mt-4 text-grey-200">
                     <li className="flex items-center">
                         <svg className="w-6 h-6 mr-1.5 text-purple-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        Rédaction d'articles intéressants centrés sur des mots-clés spécifiques
+                        Rédaction d&apos;articles intéressants centrés sur des mots-clés spécifiques
                     </li>
                     <li className="mt-2 flex items-center">
                         <svg className="w-6 h-6 mr-1.5 text-purple-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
@@ -126,7 +126,7 @@ export default function Services() {
                     </li>
                     <li className="mt-2 flex items-start">
                         <svg className="w-6 h-6 mr-1.5 text-purple-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        Stratégies de link building, c'est à dire faire en sorte que d'autres sites ajoutent un lien vers le votre
+                        Stratégies de link building, c&apos;est à dire faire en sorte que d&apos;autres sites ajoutent un lien vers le votre
                     </li>
                     <li className="mt-2 flex items-center">
                         <svg className="w-6 h-6 mr-1.5 text-purple-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
@@ -135,7 +135,7 @@ export default function Services() {
                 </ul>
             </section>
             <section className='max-w-2xl mt-12 mx-6 '>
-                <h2 className='mt-12 font-semibold text-2xl'>L'étapes supérieure</h2>
+                <h2 className='mt-12 font-semibold text-2xl'>L&apos;étapes supérieure</h2>
                 <p className='mt-6 font-regular text-grey-200'>Nous nous efforcons de créer des designs modernes et agréables à utiliser pour vos clients. Pour les marques désirant aller plus loin dans leur présence en ligne, il nous est également possible de créer des expériences 3D intéractives qui vous établiront comme une marque incoutournable.</p>
                 <p className='mt-6 font-regular text-grey-200'>Nous sommes également capables de concevoir de véritables applications web comme des sites e-commerces, ou des saas en tout genre. </p>
             </section>

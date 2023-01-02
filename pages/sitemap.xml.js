@@ -4,15 +4,24 @@ function generateSiteMap(articles) {
     return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>https://quentinjs.com</loc>
+       <loc>https://luden.fr</loc>
      </url>
      <url>
-       <loc>https://quentinjs.com/blog</loc>
+       <loc>https://luden.fr/services</loc>
+     </url>
+     <url>
+       <loc>https://luden.fr/a-propos</loc>
+     </url>
+     <url>
+       <loc>https://luden.fr/contact</loc>
+     </url>
+     <url>
+       <loc>https://luden.fr/blog</loc>
      </url>
      ${articles?.data.map((article) => {
          return `
        <url>
-           <loc>${`${'https://quentinjs.com/blog'}/${article.attributes.slug}`}</loc>
+           <loc>${`${'https://luden.fr/blog'}/${article.attributes.slug}`}</loc>
        </url>
      `;
        })

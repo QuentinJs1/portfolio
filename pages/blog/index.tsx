@@ -23,17 +23,17 @@ export default function BlogPage({ articles }: { articles: any }) {
         <>
             <Head>
                 <title>Blog - Luden</title>
-                <link rel="canonical" href="https://quentinjs.com/blog" key="canonical" />
+                <link rel="canonical" href="https://luden.fr/blog" key="canonical" />
                 <meta name="description" content="Blog parlant de 3D, de développement web et de marketing." key="desc" />
                 <meta property="og:title" content="Blog - Luden" />
                 <meta property="og:description" content="Blog parlant de 3D, de développement web et de marketing." />
-                <meta property="og:image" content="https://quentinjs.com/images/social/og-image.png" />
-                <meta property="og:url" content="https://quentinjs.com" />
+                <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
+                <meta property="og:url" content="https://luden.fr" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@quentin__js" />
                 <meta name="twitter:title" content="Blog - Luden" />
                 <meta name="twitter:description" content="Blog parlant de 3D, de développement web et de marketing." />
-                <meta name="twitter:image" content="https://quentinjs.com/images/social/og-image.png" />
+                <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
             </Head>
             <main className="h-screen mt-16 pb-20 px-4 sm:px-20 xl:px-40 2xl:px-xl w-full bg-gradient-to-b from-lightwhite">
                 <h1 className="flex justify-center font-bold text-2xl text-white">Blog</h1>
