@@ -9,9 +9,10 @@ export default function APropos() {
                 <link rel="canonical" href="https://luden.fr/a-propos" key="canonical" />
                 <meta name="description" content="Voici comment notre expérience et philosophie va nous permettre de vous offrir le site web moderne dont vous rêvez, sans avoir à dépenser des sommes folles." key="desc" />
                 <meta property="og:title" content="A propos - Luden" />
+                <meta property="og:type" content="website"/>
                 <meta property="og:description" content="Voici comment notre expérience et philosophie va nous permettre de vous offrir le site web moderne dont vous rêvez, sans avoir à dépenser des sommes folles." />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
-                <meta property="og:url" content="https://luden.fr" />
+                <meta property="og:url" content="https://luden.fr/a-propos" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@quentin__js" />
                 <meta name="twitter:title" content="A propos - Luden" />

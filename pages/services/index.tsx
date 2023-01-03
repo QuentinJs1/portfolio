@@ -11,15 +11,16 @@ export default function Services() {
             <Head>
                 <title>Services - Luden</title>
                 <link rel="canonical" href="https://luden.fr/services" key="canonical" />
-                <meta name="description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150 €/mois, une offre SEO à 300 €/mois ou un site dynamique à 450 €/mois." key="desc" />
+                <meta name="description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150€/mois, une offre SEO à 300€/mois ou un site dynamique à 450€/mois." key="desc" />
                 <meta property="og:title" content="Services - Luden" />
-                <meta property="og:description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150 €/mois, une offre SEO à 300 €/mois ou un site dynamique à 450 €/mois." />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150€/mois, une offre SEO à 300€/mois ou un site dynamique à 450€/mois." />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
                 <meta property="og:url" content="https://luden.fr/services" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@quentin__js" />
                 <meta name="twitter:title" content="Services - Luden" />
-                <meta name="twitter:description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150 €/mois, une offre SEO à 300 €/mois ou un site dynamique à 450 €/mois." />
+                <meta name="twitter:description" content="Choisissez parmi trois offres différentes en fonction de vos besoins : un site web statique à 150€/mois, une offre SEO à 300€/mois ou un site dynamique à 450€/mois." />
                 <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
             </Head>
             <main className="mt-16 text-white mx-auto flex items-center flex-col">

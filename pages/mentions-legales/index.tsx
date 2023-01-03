@@ -8,6 +8,7 @@ export default function MentionsLegales() {
                 <link rel="canonical" href="https://luden.fr/mentions-legales" key="canonical" />
                 <meta name="description" content="Liste des mentions légales de l'entreprise Luden. N'hésitez pas à nous contacter à contact@luden.fr pour plus d'informations. Mises à jour le 3 janvier 2023." key="desc" />
                 <meta property="og:title" content="Mentions légales - Luden" />
+                <meta property="og:type" content="website"/>
                 <meta property="og:description" content="Liste des mentions légales de l'entreprise Luden. N'hésitez pas à nous contacter à contact@luden.fr pour plus d'informations. Mises à jour le 3 janvier 2023." />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
                 <meta property="og:url" content="https://luden.fr/mentions-legales" />

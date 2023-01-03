@@ -8,6 +8,7 @@ export default function PolitiqueDeConfidentialite() {
                 <link rel="canonical" href="https://luden.fr/politique-de-confidentialite" key="canonical" />
                 <meta name="description" content="Politique de confidentialité de l'entreprise Luden. N'hésitez pas à nous contacter à contact@luden.fr pour plus d'informations. Mises à jour le 3 janvier 2023." key="desc" />
                 <meta property="og:title" content="Politique de confidentialité - Luden" />
+                <meta property="og:type" content="website"/>
                 <meta property="og:description" content="Politique de confidentialité de l'entreprise Luden. N'hésitez pas à nous contacter à contact@luden.fr pour plus d'informations. Mises à jour le 3 janvier 2023." />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
                 <meta property="og:url" content="https://luden.fr/politique-de-confidentialite" />

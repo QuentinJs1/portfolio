@@ -31,6 +31,7 @@ export default function Article({ article, params }: { article: any, params: any
                 <link rel="canonical" href={`https://luden.fr/blog/${article.data[0].attributes.slug}`} key="canonical"/>
                 <meta name="description" content={ article.data[0].attributes.description } key="desc" />
                 <meta property="og:title" content={ article.data[0].attributes.socialTitle } />
+                <meta property="og:type" content="article"/>
                 <meta property="og:description" content={ article.data[0].attributes.description } />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
                 <meta name="twitter:card" content="summary_large_image" />

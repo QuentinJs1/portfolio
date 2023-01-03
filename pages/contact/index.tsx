@@ -38,6 +38,7 @@ export default function Contact() {
                 <link rel="canonical" href="https://luden.fr/contact" key="canonical" />
                 <meta name="description" content="Contactez nous et recevez gratuitement une étude complète de votre site web actuelle, ainsi qu'une proposition d'amélioration." key="desc" />
                 <meta property="og:title" content="Contact - Luden" />
+                <meta property="og:type" content="website"/>
                 <meta property="og:description" content="Contactez nous et recevez gratuitement une étude complète de votre site web actuelle, ainsi qu'une proposition d'amélioration." />
                 <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
                 <meta property="og:url" content="https://luden.fr/contact" />
