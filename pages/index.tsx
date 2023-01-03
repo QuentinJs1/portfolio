@@ -8,17 +8,17 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Luden - Freelance dev web</title>
+        <title>Luden - Studio de développement web</title>
         <link rel="canonical" href="https://luden.fr" key="canonical" />
-        <meta name="description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." key="desc" />
-        <meta property="og:title" content="Luden - Freelance dev web" />
-        <meta property="og:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida." />
+        <meta name="description" content="Luden est une agence de développement web qui permet aux petites entreprises d'obtenir des sites web de grande qualité. Nous faisons des sites vitrines, e-commerce et 3D." key="desc" />
+        <meta property="og:title" content="Luden - Studio de développement web" />
+        <meta property="og:description" content="Luden est une agence de développement web qui permet aux petites entreprises d'obtenir des sites web de grande qualité. Nous faisons des sites vitrines, e-commerce et 3D." />
         <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
         <meta property="og:url" content="https://luden.fr" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@quentin__js" />
         <meta name="twitter:title" content="Luden - Freelance dev web" />
-        <meta name="twitter:description" content="Duis a libero ut purus ultrices ultricies ac vitae sapien. Phasellus molestie a mi nec gravida. Aenean viverra vestibulum sapien sit amet auctor. Aliquam sapien sapien, convallis id turpis in, fermentum tincidunt lectus." />
+        <meta name="twitter:description" content="Luden est une agence de développement web qui permet aux petites entreprises d'obtenir des sites web de grande qualité. Nous faisons des sites vitrines, e-commerce et 3D." />
         <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
       </Head>
       <main className='text-white'>
