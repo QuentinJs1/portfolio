@@ -34,7 +34,7 @@ export default function Services() {
                         <section className="rounded-lg border-grey-500 border bg-grey-700 flex items-center flex-col px-6 py-6 my-6">
                             <h2 className="font-semibold text-xl">Standard + Blog</h2>
                             <p className="text-center text-sm mt-6 text-grey-200 uppercase">site 5 pages + stratégie SEO</p>
-                            { onetime ? <p className="text-center text-xs mt-3 text-grey-200">A partir de :</p> : '' }
+                            { onetime ? <p className="text-center text-xs mt-3 text-grey-200">A partir de :</p> : <div className='mt-2'/> }
                             <div className={`mt-${ onetime ? '3' : '8' } text-grey-200`}><strong className="font-semibold text-5xl text-white">{ onetime ? '4000€' : '300€' }</strong>{ onetime ? '' : '/mois' }</div>
                             <ul className="mt-8 ml-4 text-grey-200">
                                 <li className="mt-2 flex items-center">
@@ -63,7 +63,7 @@ export default function Services() {
                         <section className="rounded-lg order-first lg:order-none border-purple-500 border bg-grey-700 flex items-center justify-between flex-col px-6 py-6">
                             <h2 className="font-semibold text-xl">Standard</h2>
                             <p className="text-center text-sm mt-6 text-grey-200 uppercase">site web statique de 5 pages</p>
-                            { onetime ? <p className="text-center text-xs text-grey-200 mt-6">A partir de :</p> : '' }
+                            { onetime ? <p className="text-center text-xs text-grey-200 mt-10">A partir de :</p> : <div className='mt-0'/> }
                             <div className={`mt-${ onetime ? '2' : '8'} text-grey-200`}><strong className="font-semibold text-5xl text-white">{ onetime ? '3000€' : '150€' }</strong>{ onetime ? '' : '/mois' }</div>
                             <ul className="mt-8 ml-4 text-grey-200">
                                 <li className="mt-2 flex items-center">

@@ -4,6 +4,7 @@ import Banner from "@components/Banner";
 import Navbar from "@components/Navbar";
 import Footer from '@components/Footer';
 import Lines from '@components/Lines';
+import Cookies from '@components/Cookies';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+      <Cookies />
     </div>
   )
 }
