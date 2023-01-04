@@ -6,6 +6,7 @@ export default function Contact() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const [succeeded, setSucceeded] = useState(true)
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
@@ -27,7 +28,12 @@ export default function Contact() {
             if (res.status === 200) {
               console.log('Response succeeded!')
               setSubmitted(true)
-              setEmail('')
+              setSucceeded(true)
+            }
+            else if (res.status === 400) {
+              console.log('Response failed!')
+              setSubmitted(true)
+              setSucceeded(false)
             }
         })
     }
@@ -53,12 +59,12 @@ export default function Contact() {
                 <section className="mt-8 text-white mx-4 md:max-w-2xl md:mx-auto">
                     {
                         submitted ? 
-                        <div className='mt-20 text-center bg-emerald-700 rounded-lg py-3 px-6 flex flex-col items-center'>
+                        <div className={`mt-20 text-center ${ succeeded ? 'bg-emerald-700' : 'bg-red-700' } rounded-lg py-3 px-6 flex flex-col items-center`}>
                             <div className='flex items-center'>
-                                <svg className={`w-5 h-5 mr-1 text-white flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-                                <p>Votre message à bien été envoyé.</p>
+                            { succeeded ? <svg className={`w-5 h-5 mr-1 text-white flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg> : <div /> }
+                                <p>{ succeeded ? 'Votre message à bien été envoyé.' : 'Il semblerait qu\'il y ait eu un problème.' }</p>
                             </div>
-                            <p>Nous reviendront vers vous dès que possible.</p>
+                            <p>{ succeeded ? 'Nous reviendront vers vous dès que possible.' : 'Merci de nous contacter à : contact@luden.fr le temps que nous résolvons cette erreur.' }</p>
                         </div> :
                         <>
                             <div className="bg-red-600 rounded-md text-sm text-center py-3 px-4 mt-6">Il y a actuellement beaucoup de demandes pour nos services, il est possible que nous ne soyons pas en mesure de travailler sur votre site web avant quelques temps. Néanmoins, nous répondrons à votre demande en moins de 24 heures pour vous apporter plus de précisions.</div>

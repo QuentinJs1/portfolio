@@ -25,9 +25,8 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
 
     transporter.sendMail(mailData, function (err: any, info: any) {
         if(err)
-          console.log(err)
+          return res.status(400).end()
         else
-          console.log(info)
+          return res.status(200).end()
     })
-    res.status(200).end()
 }
