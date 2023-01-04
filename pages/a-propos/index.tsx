@@ -22,7 +22,7 @@ export default function APropos() {
             <section className="min-h-screen mt-16 text-white mx-6 md:max-w-2xl md:mx-auto">
                 <h1 className="flex justify-center font-bold text-2xl">A propos</h1>
                 <div className='flex flex-col items-center mt-8 lg:m-0'>
-                    <Image width='120' height='120' className='object-fit h-40 w-40 rounded-full lg:mt-8' src="/images/avatar.webp" alt="Une photo de Quentin C., devant un fond bleu." />
+                    <Image width='120' height='120' className='object-fit h-40 w-40 rounded-full lg:mt-8' src="/images/avatar.png" alt="Une photo de Quentin C., devant un fond bleu." />
                 </div>
                 <h2 className='mt-12 font-semibold text-2xl'>Donner aux petites entreprises le traitement des grandes</h2>
                 <p className='mt-6 font-regular text-grey-200'>Mon nom est Quentin C., je suis le dirigeant et le développeur unique de Luden. J&apos;ai récemment obtenu un master en informatique spécialisé dans l&apos;ingénierie web, et je développe des sites internet depuis maintenant 5 ans.</p>

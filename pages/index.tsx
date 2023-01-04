@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const Home: NextPage = () => {
+  console.log('%cHello 👋\n\nSi vous voyez ce message, c\'est probablement que vous êtes un développeur. Le site à été fait en utilisant Next.js et tailwindcss, vous pouvez checker le code sur ce repo : https://github.com/QuentinJs1/portfolio \n\nEt non, vous ne trouverez aucun message d\'erreur ici !', 'font-weight: bold; backgdround-color: black' )
+
   return (
     <>
       <Head>
@@ -27,7 +29,7 @@ const Home: NextPage = () => {
           <div className="text-center flex flex-col items-center mx-auto lg:w-full lg:flex-row">
             <div className='lg:text-left lg:max-w-7xl'>
               <h1 className="text-3xl font-bold mb-4 leading-10 mt-10 md:text-5xl lg:text-4xl lg:leading-relaxed">
-                Les petites entreprises ont aussi le droit à de super sites web
+                Les petites entreprises ont aussi le droit à des super sites web
               </h1>
               <h2 className="my-6 font-light text-whiute md:leading-8 md:text-lg">
                 Pas de Wordpress ou de no code - Nous offrons des sites modernes, performants et <strong className='font-bold underline underline-offset-4 decoration-4 decoration-purple-500'>100% codés à la main</strong> à partir de 150 €/mois.
@@ -49,14 +51,14 @@ const Home: NextPage = () => {
             <p className='text-sm text-grey-200 pt-12 text-center md:text-base'>
               Nous sommes spécialisés dans le design et le développement web pour les petites et moyennes entreprises. Notre mission est de fournir des sites de grande qualité à toutes les entreprises qui en ont besoin, sans qu&apos;elles aient à payer une fortune.</p>
           </section>
-          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
+          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-5xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
             <div>
               <h2 className='text-xl font-semibold lg:text-2xl'>Nous nous occupons de <strong className='text-lightPurple font-semibold'>tout.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Vous n&apos;avez pas le temps de vous occuper de votre site web, et c&apos;est bien normal. Nous concevons, déployons et maintenons votre site web autant de temps que vous le souhaiterez. Modifications illimitées, sans engagement.</p>
             </div>
             <Image width='1500' height='200' className='mt-10 md:max-w-xl md:mx-auto lg:m-auto' src="/images/chill-and-work.png" alt="Deux illustrations 3D côte à côte, une avec un homme qui se repose sur son transat, l'autre en train de travailler." />
           </section>
-          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row-reverse lg:mx-auto lg:items-center'>
+          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-5xl lg:flex lg:flex-row-reverse lg:mx-auto lg:items-center'>
             <div className='lg:pl-20'>
               <h2 className='text-xl font-semibold lg:text-2xl'>Des sites web <strong className='text-lightPurple font-semibold'>mémorables.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base'>
@@ -66,7 +68,7 @@ const Home: NextPage = () => {
             </div>
             <Image width='1200' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/design.png" alt="Deux illustrations 3D côte à côte, une avec un " />
           </section>
-          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-6xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
+          <section className='flex flex-col mx-6 my-28 md:mx-16 md:text-base lg:max-w-5xl lg:flex lg:flex-row lg:mx-auto lg:items-center'>
             <div>
               <h2 className='text-xl font-semibold lg:text-2xl'>Chaque ligne de code est <strong className='text-lightPurple font-semibold'>écrite à la main.</strong></h2>
               <p className='text-sm text-grey-200 pt-6 md:text-base lg:pr-20'>Cela assure la meilleure performance possible et permet d&apos;attirer plus de clients sur votre site, et donc de vous rapporter plus de revenus. Nous garantissons également que votre site sera accessible pour tous et naturellement bien classé sur Google.</p>
@@ -74,8 +76,8 @@ const Home: NextPage = () => {
             <Image width='1500' height='1500' className='mt-10 md:max-w-xl md:mx-auto' src="/images/lighthouse.png" alt="3 indicateurs, le premier est performances avec 97%, les deux autres sont accessibilité et SEO à 100%." />
           </section>
         </section>
-        <section className='bg-grey-700 my-28 px-6 py-8 md:px-16 lg:rounded-3xl lg:max-w-6xl lg:py-16 lg:mx-auto'>
-          <div className='flex flex-col lg:max-w-4xl lg:mx-auto'>
+        <section className='bg-grey-700 my-28 px-6 py-8 md:px-16 lg:rounded-3xl lg:max-w-5xl lg:py-16 lg:mx-auto'>
+          <div className='flex flex-col lg:max-w-5xl lg:mx-auto'>
             <h2 className='text-3xl font-semibold text-center lg:text-3xl'>0€ d&apos;accompte, 150€ par mois.
               <br />
               <strong className='text-lightPurple font-semibold'>Sans engagement.</strong>
@@ -133,7 +135,7 @@ const Home: NextPage = () => {
         <section className='flex flex-col my-16 mx-6 pt-16 md:px-16 lg:py-20'>
           <h2 className='text-3xl font-semibold text-center lg:text-3xl'>Qui sommes-nous ?</h2>
           <div className='flex flex-col items-center mt-8 lg:m-0'>
-            <Image width='120' height='120' className='object-fit h-40 w-40 rounded-full lg:mt-8' src="/images/avatar.webp" alt="Une photo de Quentin C., devant un fond bleu." />
+            <Image width='120' height='120' className='object-fit h-40 w-40 rounded-full lg:mt-8' src="/images/avatar.png" alt="Une photo de Quentin C., devant un fond bleu." />
             <h3 className='mt-6 font-semibold text-xl'>Quentin C.</h3>
             <label className='mt-2 text-grey-200 md:text-base'>Fondateur / Développeur</label>
           </div>

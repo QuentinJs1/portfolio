@@ -31,7 +31,7 @@ export default function Footer() {
             <section
                 className="flex flex-col items-center text-sm text-gray-200 mt-8 md:items-center md:justify-between"
             >
-                <div className="md:mt-0 pb-4">© 2022 Luden · All rights reserved.</div>
+                <div className="md:mt-0 pb-4">© {new Date().getFullYear()} Luden · Tout droits reservés.</div>
             </section>
         </footer>
     )

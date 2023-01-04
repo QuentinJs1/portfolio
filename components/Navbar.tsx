@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className='sticky mt-8 z-10'>
-                <div className='line-x' />
+                {/* <div className='line-x' /> */}
                 <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 w-full'>
                     <div className='relative flex items-center justify-between'>
                         <Link href='/' className='flex items-center'>
@@ -53,7 +53,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className='line-x' />
+                {/* <div className='line-x' /> */}
                 <div className={`${menuOpen ? 'block' : 'hidden'} md:hidden' id='mobile-menu`}>
                     <div className='mt-12 px-2 pt-2 pb-3 space-y-1 h-screen flex flex-col items-center text-white'>
                         <Link href='/' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>

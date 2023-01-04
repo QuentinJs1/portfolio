@@ -4,27 +4,23 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
     require('dotenv').config()
 
     const nodemailer = require('nodemailer')
-    const AWS = require('aws-sdk');
-    AWS.config.update({region:'eu-west-3'});
 
-    AWS.config.update({
-        accessKeyId: 'AKIAZNYXCBVMLNOCAXUM',
-        secretAccessKey: process.env.SECRET_KEY
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      secure: true,
+      auth: {
+        user: process.env.MAIL,
+        pass: process.env.PASSWORD
+      },
     });
 
-    const transporter = nodemailer.createTransport({
-        SES: new AWS.SES({
-            apiVersion: '2010-12-01'
-        })
-      })
-
-      const mailData = {
-        from: 'quentinchaignauduniv@gmail.com',
-        to: 'contact@luden.fr',
-        subject: `Message de ${req.body.name}`,
-        text: req.body.message,
-        html: `<div>${req.body.message}</div><p>Envoyé depuis :
-        ${req.body.email}</p>`
+    const mailData = {
+      from: process.env.MAIL,
+      to: 'contact@luden.fr',
+      subject: `${req.body.name}`,
+      text: req.body.message,
+      html: `<div>${req.body.message}</div><p>Envoyé depuis :
+      ${req.body.email}</p>`
     }
 
     transporter.sendMail(mailData, function (err: any, info: any) {
@@ -33,5 +29,5 @@ export default function Contact(req: NextApiRequest, res: NextApiResponse) {
         else
           console.log(info)
     })
-    res.status(200)
+    res.status(200).end()
 }
