@@ -43,7 +43,7 @@ export default function Navbar() {
                                     <Link href='/blog' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Blog
                                     </Link>
-                                    <Link href='/contact'>
+                                    <Link className='cursor:pointer' href='/contact'>
                                         <button className='w-full py-4 px-8 font-medium bg-purple-500 rounded-lg transition-colors md:w-fit md:px-5 md:py-3 hover:bg-purple-300'>
                                             Contactez nous
                                         </button>

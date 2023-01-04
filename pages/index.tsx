@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const Home: NextPage = () => {
-  console.log('%cHello 👋\n\nSi vous voyez ce message, c\'est probablement que vous êtes un développeur. Le site à été fait en utilisant Next.js et tailwindcss, vous pouvez checker le code sur ce repo : https://github.com/QuentinJs1/portfolio \n\nEt non, vous ne trouverez aucun message d\'erreur ici !', 'font-weight: bold; backgdround-color: black' )
+  // console.log('%cHello 👋\n\nSi vous voyez ce message, c\'est probablement que vous êtes un développeur. Le site à été fait en utilisant Next.js et tailwindcss, vous pouvez checker le code sur ce repo : https://github.com/QuentinJs1/portfolio \n\nEt non, vous ne trouverez aucun message d\'erreur ici !', 'font-weight: bold; backgdround-color: black' )
 
   return (
     <>
