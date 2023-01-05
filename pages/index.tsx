@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="canonical" href="https://luden.fr" key="canonical" />
         <meta name="description" content="Luden est une agence de développement web qui permet aux petites entreprises d'obtenir des sites web de qualité. Nous faisons des sites vitrines, e-commerces et 3D." key="desc" />
         <meta property="og:title" content="Luden - Studio de développement web" />
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="website" />
         <meta property="og:description" content="Luden est une agence de développement web qui permet aux petites entreprises d'obtenir des sites web de qualité. Nous faisons des sites vitrines, e-commerces et 3D." />
         <meta property="og:image" content="https://luden.fr/images/social/og-image.png" />
         <meta property="og:url" content="https://luden.fr" />
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
       </Head>
       <main className='text-white'>
-        <section className='flex flex-col justify-center w-full px-6 pt-12 pb-20 text-center md:mx-auto md:px-16 md:pt-20 md:max-w-4xl lg:max-w-7xl lg:pt-0'>
+        <section className='flex flex-col justify-center w-full h-screen px-6 pt-12 pb-20 text-center md:mx-auto md:px-16 md:pt-20 md:max-w-4xl lg:max-w-7xl lg:pt-0'>
           <div className="text-center flex flex-col items-center mx-auto lg:w-full lg:flex-row">
             <div className='lg:text-left lg:max-w-7xl'>
               <h1 className="text-3xl font-bold mb-4 leading-10 mt-10 md:text-5xl lg:text-4xl lg:leading-relaxed">
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                 </button>
               </Link>
             </div>
-            <Image width='1400' height='1400' className='mt-20 lg:mt-6' src="/images/main-image.webp" alt="Scène 3D où un petit robot surveille une chaîne d'assemblage, assisté par un bras motorisé." />
+            <Image width='700' height='700' className='mt-0 lg:mt-6' src="/images/main.png" alt="Scène 3D où un petit robot surveille une chaîne d'assemblage, assisté par un bras motorisé." />
           </div>
         </section>
         {/* <Banner /> */}
