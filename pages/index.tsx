@@ -165,7 +165,7 @@ const Home: NextPage = () => {
             <div className='flex pt-4'>
               <p>1.</p>
               <p className='text-sm text-grey-200 md:text-base ml-3'>
-                Vous nous contactez en utilisant le bouton ci-dessous et nous faire part rapidement de l'activité de votre entreprise et de vos besoins.
+                Vous nous contactez en utilisant le bouton ci-dessous et nous faire part rapidement de l&apos;activité de votre entreprise et de vos besoins.
               </p>
             </div>
             <div className='flex pt-4'>
@@ -195,7 +195,7 @@ const Home: NextPage = () => {
             <label className='mt-2 text-grey-200 md:text-base'>Fondateur / Développeur</label>
           </div>
           <p className='text-sm text-grey-200 pt-14 md:text-base lg:max-w-3xl lg:mx-auto'>
-            Je m'appelle Quentin C. et je suis jeune diplômé dun master informatique spécialisé dans l&apos;ingénierie web.
+            Je m&apos;appelle Quentin C. et je suis jeune diplômé dun master informatique spécialisé dans l&apos;ingénierie web.
             <br /><br />
             Après plus de 4 ans à faire des sites web et à m&apos;intéresser au design, j&apos;ai décidé de mettre mes compétences au profit des petites entreprises, car je suis convaincu qu&apos;elles méritent elles aussi le traitement des &apos;grandes&apos;.
             <Link href="/a-propos"><strong className='ml-2 text-white font-semibold underline underline-offset-2 decoration-4  decoration-purple-500 hover:no-underline'> En savoir plus</strong></Link>
