@@ -12,7 +12,7 @@ export default function Question({ question, response }: Props) {
     const lines = response.split('\n');
 
     return (
-        <button className="lg:max-w-3xl lg:min-w-3xl pt-8" onClick={() => setIsQuestion(!isOpen)}>
+        <button className="lg:max-w-4xl lg:min-w-3xl pt-8" onClick={() => setIsQuestion(!isOpen)}>
             <div className="flex flex-row justify-between toast">
                 <p className="text-lg font-medium text-left md:text-xl">{question}</p>
                 <div>

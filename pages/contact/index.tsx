@@ -67,7 +67,7 @@ export default function Contact() {
                             <p>{ succeeded ? 'Nous reviendront vers vous dès que possible.' : 'Merci de nous contacter à : contact@luden.fr le temps que nous résolvons cette erreur.' }</p>
                         </div> :
                         <>
-                            <div className="bg-red-600 rounded-md text-sm text-center py-3 px-4 mt-6">Il y a actuellement beaucoup de demandes pour nos services, il est possible que nous ne soyons pas en mesure de travailler sur votre site web avant quelques temps. Néanmoins, nous répondrons à votre demande en moins de 24 heures pour vous apporter plus de précisions.</div>
+                            <div id="alert" className="bg-red-600 rounded-md text-sm text-center py-3 px-4 mt-6">Il y a actuellement beaucoup de demandes pour nos services, il est possible que nous ne soyons pas en mesure de travailler sur votre site web avant quelques temps. Néanmoins, nous répondrons à votre demande en moins de 24 heures pour vous apporter plus de précisions.</div>
                             <h1 className="mt-8 flex justify-center font-bold text-2xl">Contactez nous</h1>
                             <form className="flex flex-col bg-grey-700 w-full max-w-3xl py-6 px-6 rounded-xl mt-6 md:max-w-lg md:mx-auto" action="/send-data-here" method="post">
                                 <input

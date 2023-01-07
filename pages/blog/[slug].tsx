@@ -41,7 +41,7 @@ export default function Article({ article, params }: { article: any, params: any
                 <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
             </Head>
             <div className="my-12 flex justify-center w-full">
-                <div className="w-full px-4 lg:w-2/5 flex flex-col justify-start items-start xl:items-center">
+                <div className="w-full px-4 lg:w-3/5 flex flex-col justify-start items-start xl:items-center">
                     <ReactMarkdown className={` ${styles.reactMarkDown} text-white `}>
                         {article.data[0].attributes.content}
                     </ReactMarkdown>

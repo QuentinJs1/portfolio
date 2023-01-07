@@ -46,7 +46,7 @@ export default function BlogPage({ articles }: { articles: any }) {
                             title={article.attributes.title}
                             timer={article.attributes.timer}
                             url={article.attributes.slug}
-                            imageUrl={`${article.attributes.coverImage.data.attributes.formats.small.url}`}
+                            imageUrl={`${article.attributes.coverImage.data.attributes.formats.medium.url}`}
                             imageAlt={article.attributes.coverImage.data.attributes.alternativeText}
                         />
                     })}

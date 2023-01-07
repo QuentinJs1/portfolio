@@ -37,6 +37,9 @@ export default function Navbar() {
                                     <Link href='/services' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Services
                                     </Link>
+                                    <Link href='/tarifs' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
+                                        Tarifs
+                                    </Link>
                                     {/* <Link href='/realisations' className={`${styles.linkUnderline} ${styles.linkUnderlineBlack} transition duration-200 hover:text-white py-1 font-medium`}>
                                         Réalisations
                                     </Link> */}
@@ -64,6 +67,9 @@ export default function Navbar() {
                         </Link>
                         <Link href='/services' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
                             Services
+                        </Link>
+                        <Link href='/tarifs' onClick={() => setMenuOpen(!menuOpen)} className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
+                            Tarifs
                         </Link>
                         {/* <Link href='/realisations' className='hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-xl font-medium'>
                             Réalisations

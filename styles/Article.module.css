@@ -7,7 +7,6 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 3rem;
-    margin-bottom: 120px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -32,7 +31,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0.75rem;
+    border-radius: 0.25rem;
 }
 
 .reactMarkDown p {
@@ -67,11 +66,6 @@
     .reactMarkDown h1 {
         font-size: 2.25rem;
     }
-
-    .reactMarkDown img {
-        width: 80%;
-    }
-
     .reactMarkDown h2 {
         font-size: 1.5rem;
     }
