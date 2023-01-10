@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <meta name="twitter:image" content="https://luden.fr/images/social/og-image.png" />
       </Head>
       <main className='text-white'>
-        <section className='flex flex-col justify-center w-full px-6 pt-12 pb-20 text-center md:mx-auto md:px-16 md:pt-20 md:max-w-4xl lg:max-w-7xl lg:pt-0  xl:pt-20'>
+        <section className='flex flex-col justify-center w-full px-6 pt-12 pb-20 text-center md:mx-auto md:px-16 md:pt-20 md:max-w-4xl lg:max-w-7xl lg:pt-0  xl:pt-10 2xl:pt-40'>
           <div className="text-center flex flex-col items-center mx-auto lg:w-full lg:flex-row">
             <div className='lg:text-left lg:max-w-7xl'>
               <h1 id="test" className="text-3xl font-bold mb-4 leading-10 mt-10 md:text-5xl lg:text-4xl lg:leading-relaxed">
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* <Banner /> */}
-        <section>
+        <section className='2xl:pt-40'>
           <section className='flex flex-col items-center mx-6 my-28 md:mx-16 lg:max-w-3xl lg:mx-auto
           '>
             <h2 className='text-3xl font-semibold text-center md:text-4xl lg:text-3xl'>Une agence web pour tout vos besoins</h2>

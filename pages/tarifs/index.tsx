@@ -1,8 +1,17 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { gsap } from "gsap"
+import { useEffect } from 'react';
 
 export default function Tarifs() {
     const [onetime, setOnetime] = useState(false)
+
+    useEffect(() => {
+        let tl = gsap.timeline({ defaults: { ease: "power4.inOut", duration: 2 } })
+    
+        tl.to('#pricingCard', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 1.5 })
+    
+      });
 
     return (
         <main className="mt-16 text-white mx-auto flex items-center flex-col">
@@ -14,7 +23,7 @@ export default function Tarifs() {
                     </div>
                     { onetime ? <p className='my-4'></p> : <p className='text-center text-grey-200 text-sm my-4'>Tout nos abonnements sont SANS ENGAGEMENT. <br />Résiliez quand vous le souhaitez.</p> }
                     <div className="grid grid-cols-1 mx-6 order-1 lg:grid-cols-3 gap-8 mt-10 max-w-5xl">
-                        <section className="rounded-lg border-grey-500 border bg-grey-900 flex items-center flex-col px-6 py-6 my-6">
+                        <section id="pricingCard" className="rounded-lg border-grey-500 border bg-grey-900 flex items-center flex-col px-6 py-6 my-6">
                             <h2 className="font-semibold text-xl">Standard + Blog</h2>
                             <p className="text-center text-sm mt-6 text-grey-200 uppercase">site 5 pages + stratégie SEO</p>
                             { onetime ? <p className="text-center text-xs mt-3 text-grey-200">A partir de :</p> : <p className='mt-2'/> }
@@ -43,7 +52,7 @@ export default function Tarifs() {
                                 </button>
                             </Link>
                         </section>
-                        <section className="rounded-lg order-first lg:order-none border-purple-500 border bg-grey-900 flex items-center justify-between flex-col px-6 py-6">
+                        <section id="pricingCard" className="rounded-lg order-first lg:order-none border-purple-500 border bg-grey-900 flex items-center justify-between flex-col px-6 py-6">
                             <h2 className="font-semibold text-xl">Standard</h2>
                             <p className="text-center text-sm mt-6 text-grey-200 uppercase">site web statique de 5 pages</p>
                             { onetime ? <p className="text-center text-xs text-grey-200 mt-10">A partir de :</p> : <p className='mt-0'/> }
@@ -75,7 +84,8 @@ export default function Tarifs() {
                                 Contactez nous
                                 </button>
                             </Link>
-                        </section><section className="rounded-lg border-grey-500 border bg-grey-900 flex items-center flex-col px-6 py-6 my-6">
+                        </section>
+                        <section id="pricingCard" className="rounded-lg border-grey-500 border bg-grey-900 flex items-center flex-col px-6 py-6 my-6">
                             <h2 className="font-semibold text-xl">Pro</h2>
                             <p className="text-center text-sm mt-6 text-grey-200 uppercase">3d, e-commerce & site dynamiques</p>
                             <p className="text-center text-xs mt-3 text-grey-200">A partir de :</p>

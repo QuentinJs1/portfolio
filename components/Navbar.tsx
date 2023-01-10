@@ -13,9 +13,18 @@ export default function Navbar() {
                 {/* <div className='line-x' /> */}
                 <div className='mx-auto px-6 md:max-w-3xl lg:max-w-6xl lg:px-0 w-full'>
                     <div className='relative flex items-center justify-between'>
-                        <Link href='/' className='flex items-center'>
-                            <Image width='80' height='80' className='h-10 w-auto' src='/images/logo.png' alt='Luden logo' />
-                            <div className='text-white font-semibold ml-3 text-2xl'>Luden</div>
+                        <Link href='/'>
+                            <div className='flex items-center' id={styles.logo}>
+                                <Image width='80' height='80' className='h-10 w-auto' src='/images/logo2.png' alt='Luden logo' />
+                                <div className='text-white font-semibold ml-3 text-2xl'>Luden</div>
+                                <div className="flex items-center">
+                                    <p className="logo-text text-lg font-bold">quentin.js</p>
+                                    <div className="eyes">
+                                        <div className={`${styles.eye}`} id={styles.eyeLeft}></div>
+                                        <div className={`${styles.eye}`} id={styles.eyeRight}></div>
+                                    </div>
+                                </div>
+                            </div>
                         </Link>
                         <div className='flex items-center lg:hidden'>
                             <button onClick={() => setMenuOpen(!menuOpen)} type='button' className='inline-flex items-center justify-center p-2 rounded-md text-deeppurple focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white' aria-controls='mobile-menu' aria-expanded='false'>
